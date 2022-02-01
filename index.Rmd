@@ -16,7 +16,7 @@ output:
 ---
 
 
-## Trabajo Final del Módulo
+## __Trabajo Final del Módulo__
 
 <h2>Maestría en Administración de Empresas </h2>
 
