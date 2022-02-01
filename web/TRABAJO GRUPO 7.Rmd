@@ -1,0 +1,270 @@
+---
+title: "SCM y Desarrollo de Proveedores"
+author: "GRUPO 7"
+subtitle: Una oportunidad para la Industria 4.0 
+output:
+  html_document:
+    theme: cosmo
+    highlight: monochrome
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+    fig_caption: yes
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
+---
+
+
+## Trabajo Fial del Módulo
+
+<h2>Maestría en Administración de Empresas </h2>
+
+<h3>Supply Chain Management  </h3>
+<h2> Una puerta de entrada para Industria 4.0 en latinoamérica </h2>
+![UDS](image/logo.png)
+<hr>
+
+
+# TITULO DEL PROYECTO FINAL
+
+
+## Nombre del Grupo
+
+GRUPO 7
+
+## Integrantes
+
+No olvides señala el nombre de los integrantes.
+
+1. BAZAN HEREDIA CAMILO <camibh1986@gmail.com> 
+2. SARZURI MAMANI BORIS MARCOS <boris.sarzuri@yahoo.es>
+3. VELIZ REYES ANGEL RODRIGO <velizangel778@gmail.com>
+
+
+# Procedimientos:
+
+* Los alumnos se organizarán en grupos de 4 alumnos (número aproximado).
+
+* Deberán señalar en todos los documentos (pdf, html y Rmd) el nombre del grupo , apellido(s) y nombre(s) de todos los integrantes, así como los correos (ver ejemplo en la sección "Integrantes")
+
+* Un alumno de cada grupo creará una carpeta en GitHub que compartirá con sus compañeros y profesores.
+
+* Utilizarán esta plantilla para elaborar la monografía con la que serán evaluados.
+
+* La plantilla debe ser intervenida por todos los miembros del equipo en un repositorio de GitHub. Si el grupo no tiene experiencia o esta tarea lo supera deberá consultar a los profesores.
+
+* Tejer (knit) el documento Rmd y presentarlo en la consulta previa a la entrega (Fecha Límite 31 Enero)
+
+* Una vez que hayas obtenido la confirmación del profesor genera con el archivo Rmd el documento PDF que debes subir a la plataforma de moodle.
+
+* Subir un sólo archivo por grupo
+
+
+# Estructura de la monografía
+
+## Situación Problema
+
+Describe brevemente la situación problema o caso de estudio que desarrollarás. Justifica por qué puede resultar interesante para las empresas del sector continuar leyendo el trabajo.
+Trata de proponer una solución y pregúntate a ti mismo si la solución que enuncias podría solucionar (al menos parcialmente) el problema. En muchos artículos científicos esto se expresa como "Pregunta de Investigación" o "Hipótesis".
+
+
+
+### Resumen
+
+Escribe esta parte del documento al finalizar el trabajo. 
+Limita esta parte a 200 palabras. 
+Revisa publicaciones científicas para inspirarte. 
+El resumen debe decir en trés o cuatro fraces:
+
+* El objetivo
+* La hipótesis o pregunta de investigación
+* Los datos y métodos que elegiste
+* Anticipa los resultados que encontrará el lector
+
+## Revisión bibliográfica, materiales y métodos
+
+Señala qué datasets utilizarás, di de dónde los has obtenido. 
+Señala qué métodos utilizarás para comprobar si la hipótesis o pregunta de investigación tiene respuesta afirmativa o negativa.
+Mira muy bien la forma en que escriben los artículos.
+
+
+## Marcos teóricos o métodos aplicables
+
+Explica algo de la historia del o de los métodos que resulten elegidos. Comenta si los has visto en libros, casos de estudio, si te los sugirió o comentó otro profesor, etc.
+
+
+## Experimentación
+
+---
+title: "PRUEBA"
+author: "Angel Rodrigo Veliz Reyes <velizangel778@gmail.com>"
+date: "30/1/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# PRUEBA DE CONFIGURACION 
+# IMPORTAR ARCHIVOl de Google Sheets
+
+```{r}
+library(readr)
+movil <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vS9TSXeCQaBBmUDR9xKfQPG4UYZsUhdoqil8vx_cm79hCxCNAqHvBrOTW1dRQvMf4ienzGP6L8zEb-G/pub?gid=1343453018&single=true&output=csv")
+```
+
+# Descripcion del documento importado
+#Rows: 5426 Columns: 13                                                               
+# 0s-- Column specification #---------------------------------------------------------------
+#Delimiter: ","
+#chr (2): geometry, coordinates
+#dbl (8): quadkey, avg_d_kbps, avg_u_kbps, avg_lat_ms, tests, devices, #descarga_movi...
+#lgl (3): latitude, longitude, altitude
+
+#i Use `spec()` to retrieve the full column specification for this data.
+#i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+
+
+# Comando para ver las primeras lineas de la tabla importada
+
+```{r}
+tail(movil)
+```
+
+
+# Comando para crear un histograma
+
+```{r}
+hist(movil$descarga_movil,breaks = 100, main = "Velocidad de bajada[kbps]")
+hist(movil$subida_movil,breaks = 100, main = "Velocidad de subida[kbps]")
+hist(movil$devices,breaks = 100, main = "Cantidad de dispositivos")
+```
+
+# Comando para encontrar el promedio de las variables: descarga, subida y devices
+
+```{r}
+mean(movil$descarga_movil)
+mean(movil$subida_movil)
+mean(movil$devices)
+```
+
+# Promedio de descarga Movil
+[1] 14.37818
+# Promedio de subida movil
+[1] 9.180004
+# Promedio de cantidad de dispositivos
+[1] 3.686878
+
+
+# Comando para encontrar el desvio estandar de los valores
+
+```{r}
+sd(movil$descarga_movil)
+sd(movil$subida_movil)
+sd(movil$devices)
+```
+
+# Desviacion estandar de descarga Movil[Mbps]
+[1] 12.8745
+# Desviacion estandar de subida movil [Mbps]
+[1] 7.725747
+# Desviacion estandar de cantidad de dispositivos
+[1] 6.16712
+
+
+# Creacion de variable para encontra la normal y densidad
+
+```{r}
+m1 <- rnorm(5425,14.38,12.87)
+hist(m1, breaks = 10)
+
+m2 <- rnorm(5425,14.9,18.73)
+hist(m2, breaks = 100)
+
+m3 <- rnorm(5425,3.69,6.17)
+hist(m3, breaks = 100)
+```
+
+# comando para unir diagramas (parseo)
+
+```{r}
+par(mfrow=c(1,2))
+hist(movil$descarga_movil,breaks = 100, main = "Velocidad de bajada[kbps]")
+hist(m1, breaks = 100)
+
+par(mfrow=c(1,2))
+hist(movil$subida_movil,breaks = 100, main = "Velocidad de subida[kbps]")
+hist(m2, breaks = 100)
+
+par(mfrow=c(1,2))
+hist(movil$devices,breaks = 100, main = "Cantidad de dispositivos")
+hist(m3, breaks = 100)
+```
+
+# Grafico complementario de Densidad
+
+```{r}
+par(mfrow=c(1,2))
+plot(density(movil$descarga_movil))
+plot(density(m1))
+
+par(mfrow=c(1,2))
+plot(density(movil$subida_movil))
+plot(density(m2))
+
+par(mfrow=c(1,2))
+plot(density(movil$devices))
+plot(density(m3))
+```
+
+# Commando para ploteo y correlacion
+
+```{r}
+plot(movil$descarga_movil,movil$devices)
+
+plot(movil$subida_movil,movil$devices)
+
+plot(movil$devices,movil$avg_lat_ms)
+```
+
+
+# Comando para utilizar rawdata
+
+```{r}
+movil_rawdata <- movil[,c(9,11,12,13)]
+movil_rawdata
+```
+
+# Comando para ver la correlacion de datos
+
+```{r}
+plot(movil_rawdata)
+```
+
+## Interpretación de resultados
+
+En esta parte señala claramente las cosas que no eran evidentes y que se han puesto de manifiesto con la experimentación.
+Trata de comentar situaciones del contexto que no fueron explicadas en la **Situación Problema** que están influyendo en los gráficos y resultados obtenidos.
+
+Responde a la pregunta de investigación y di si era verdadero o falso lo que pensabas al principio.
+
+
+## Referencias Bibliográficas
+
+Cita todas las bibliotecas de R-Cran que hayas utilizado
+Señala todos los enlaces en los que están los datos que utilizas.
+Señala los artículos que más te han aportado inspiración
+
+
+
+
+
+
+
+
+
+
+
+
