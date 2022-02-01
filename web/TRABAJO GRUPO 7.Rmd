@@ -310,10 +310,6 @@ Luego de realizar la correlacion de datos y analizar el campo de datos, se concl
 
 ## Referencias Bibliográficas
 
-Cita todas las bibliotecas de R-Cran que hayas utilizado
-Señala todos los enlaces en los que están los datos que utilizas.
-Señala los artículos que más te han aportado inspiración
-
 * https://github.com/teamookla/ookla-open-data/blob/master/tutorials/aggregate_by_county.md
 * https://ciudatos-bolivia.org/dataset/velocidad-de-internet-en-bolivia
 * https://negociosyempresa.com/metodologia-six-sigma/
