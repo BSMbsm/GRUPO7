@@ -68,7 +68,7 @@ No olvides señala el nombre de los integrantes.
 Describe brevemente la situación problema o caso de estudio que desarrollarás. Justifica por qué puede resultar interesante para las empresas del sector continuar leyendo el trabajo.
 Trata de proponer una solución y pregúntate a ti mismo si la solución que enuncias podría solucionar (al menos parcialmente) el problema. En muchos artículos científicos esto se expresa como "Pregunta de Investigación" o "Hipótesis".
 
-
+Realizar un analisis de la velocidad de Internet movil en Bolivia, utilizando los datos proporcionados por Speedtest de Ookla.
 
 ### Resumen
 
