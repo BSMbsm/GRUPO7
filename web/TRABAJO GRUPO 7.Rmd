@@ -131,19 +131,13 @@ Six Sigma constituye un modelo de gestión de calidad que también se conoce com
 
 ## Experimentación
 
----
-title: "PRUEBA"
-author: "Angel Rodrigo Veliz Reyes <velizangel778@gmail.com>"
-date: "30/1/2022"
-output: html_document
----
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # PRUEBA DE CONFIGURACION 
-# IMPORTAR ARCHIVOl de Google Sheets
+# Importar archivo csv de Google Sheets
 
 ```{r}
 library(readr)
@@ -151,24 +145,21 @@ movil <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vS9TSXeCQaBBm
 ```
 
 # Descripcion del documento importado
-#Rows: 5426 Columns: 13                                                               
-# 0s-- Column specification #---------------------------------------------------------------
-#Delimiter: ","
-#chr (2): geometry, coordinates
-#dbl (8): quadkey, avg_d_kbps, avg_u_kbps, avg_lat_ms, tests, devices, #descarga_movi...
-#lgl (3): latitude, longitude, altitude
+Rows: 5426 Columns: 13                                                               
+ 0s-- Column specification #---------------------------------------------------------------
+Delimiter: ","
+chr (2): geometry, coordinates
+dbl (8): quadkey, avg_d_kbps, avg_u_kbps, avg_lat_ms, tests, devices, #descarga_movi...
+lgl (3): latitude, longitude, altitude
 
-#i Use `spec()` to retrieve the full column specification for this data.
-#i Specify the column types or set `show_col_types = FALSE` to quiet this message.
-
+i Use `spec()` to retrieve the full column specification for this data.
+i Specify the column types or set `show_col_types = FALSE` to quiet this message.
 
 # Comando para ver las primeras lineas de la tabla importada
 
 ```{r}
 tail(movil)
 ```
-
-
 # Comando para crear un histograma
 
 ```{r}
@@ -222,7 +213,7 @@ m3 <- rnorm(5425,3.69,6.17)
 hist(m3, breaks = 100)
 ```
 
-# comando para unir diagramas (parseo)
+# Comando para unir diagramas (parseo)
 
 ```{r}
 par(mfrow=c(1,2))
@@ -310,11 +301,9 @@ plot(mapa_bolivia)
 
 ## Interpretación de resultados
 
-En esta parte señala claramente las cosas que no eran evidentes y que se han puesto de manifiesto con la experimentación.
-Trata de comentar situaciones del contexto que no fueron explicadas en la **Situación Problema** que están influyendo en los gráficos y resultados obtenidos.
-
-Responde a la pregunta de investigación y di si era verdadero o falso lo que pensabas al principio.
-
+Luego de realizar la correlacion de datos y analizar el campo de datos, se concluye que:
+*La latencia se incremento mucho en pruebas donde la velocidad de descarga y subida no llegaban a mas de 10 Mbps, por tanto, se estima que la red movil de los operadores de Bolivia proveen un servicio deficiente, las graficas de 'avg_lat_ms' versus 'subida_movil' y 'avg_lat_ms' versus 'descarga_movil' demuestran nuestra hipotesis.
+*la subida y descarga de datos promedio a nivel nacional es de 9.18 Mbps y 14.38 Mbps respectivamente, es decir, la relacion de descarga a subida casi llega a 2/1, tambien deducimos que, la tecnologia LTE esta siendo aprovechada por los usuarios finales. Por tanto, la inversion de los operadores debe ser dirigida a la ampliacion de la red LTE porque la demanda de los usuarios asi lo demuestra.  
 
 ## Referencias Bibliográficas
 
