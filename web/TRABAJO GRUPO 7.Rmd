@@ -124,6 +124,13 @@ Six Sigma constituye un modelo de gestión de calidad que también se conoce com
 
 **Control: **se aplican las medidas necesarias que garanticen la eficacia y continuidad del proceso, el mismo que será adecuado a los nuevos objetivos.
 
+## Desviacion estandar
+
+La desviación estándar es la medida de dispersión más común, que indica qué tan dispersos están los datos con respecto a la media. Mientras mayor sea la desviación estándar, mayor será la dispersión de los datos.
+
+El símbolo σ (sigma) se utiliza frecuentemente para representar la desviación estándar de una población, mientras que s se utiliza para representar la desviación estándar de una muestra. La variación que es aleatoria o natural de un proceso se conoce comúnmente como ruido.
+
+La desviación estándar se puede utilizar para establecer un valor de referencia para estimar la variación general de un proceso.
 
 ## Experimentación
 
