@@ -88,6 +88,21 @@ Señala qué datasets utilizarás, di de dónde los has obtenido.
 Señala qué métodos utilizarás para comprobar si la hipótesis o pregunta de investigación tiene respuesta afirmativa o negativa.
 Mira muy bien la forma en que escriben los artículos.
 
+Para realizar el análisis se utilizara el dataset proporcionado por Okkla, este conjunto de datos proporciona métricas de rendimiento de la red móvil(celular).El dataset tiene los siguientes campos registrados en la prueba de velocidad de Ookla:
+
+
+Ítem  | Descripción
+------------- | -------------
+avg_d_kbps    | La velocidad de descarga promedio de todas las pruebas realizadas en el mosaico, representada en kilobits por segundo.
+avg_u_kbps    | La velocidad de carga promedio de todas las pruebas realizadas en el mosaico, representada en kilobits por segundo.
+avg_lat_ms    | La latencia promedio de todas las pruebas realizadas en el mosaico, representada en milisegundos
+tests         | El número de pruebas realizadas en el mosaico.  
+devices       | El número de dispositivos únicos que aportan pruebas en el mosaico. 
+quadkey       | El quadkey que representa el azulejo. 
+
+Se logro obtener un dataset enfocado solo con los datos correspondientes a la región de Bolivia, actualizado hasta el 8 de noviembre de 2021, en la pagina de ciudatos Bolivia.
+
+
 
 ## Marcos teóricos o métodos aplicables
 
