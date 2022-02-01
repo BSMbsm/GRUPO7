@@ -82,9 +82,6 @@ El resumen debe decir en trés o cuatro fraces:
 
 ## Revisión bibliográfica, materiales y métodos
 
-Señala qué datasets utilizarás, di de dónde los has obtenido. 
-Señala qué métodos utilizarás para comprobar si la hipótesis o pregunta de investigación tiene respuesta afirmativa o negativa.
-Mira muy bien la forma en que escriben los artículos.
 
 Para realizar el análisis se utilizara el dataset proporcionado por Okkla, este conjunto de datos proporciona métricas de rendimiento de la red móvil(celular).El dataset tiene los siguientes campos registrados en la prueba de velocidad de Ookla:
 
@@ -104,7 +101,6 @@ Se logro obtener un dataset enfocado solo con los datos correspondientes a la re
 
 ## Marcos teóricos o métodos aplicables
 
-Explica algo de la historia del o de los métodos que resulten elegidos. Comenta si los has visto en libros, casos de estudio, si te los sugirió o comentó otro profesor, etc.
 
 
 Para realizar el analisis del dataset se propone utilizar la metodologia Six Sigma y analisis estadisticos.
