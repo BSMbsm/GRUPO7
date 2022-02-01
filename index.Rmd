@@ -25,16 +25,12 @@ output:
 ![UDS](image/upb.png)
 <hr>
 
+# __MONOGRAFIA PARA EL MODULO GESTION DE PROVEEDORES Y CADENA DE SUMINISTROS__
 
-# Formato para la presentación del trabajo final del módulo
 
-
-## Nombre del Grupo
-
-**GRUPO 7**
+### __GRUPO 7__
 
 ## Integrantes
-
 
 
 1. CAMIL BAZAN  <camibh1986@gmail.com>
