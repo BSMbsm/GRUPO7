@@ -35,7 +35,7 @@ GRUPO 7
 
 ## Integrantes
 
-No olvides señala el nombre de los integrantes.
+Los maestrantes del grupo son:
 
 1. BAZAN HEREDIA CAMILO <camibh1986@gmail.com> 
 2. SARZURI MAMANI BORIS MARCOS <boris.sarzuri@yahoo.es>
@@ -65,10 +65,8 @@ No olvides señala el nombre de los integrantes.
 
 ## Situación Problema
 
-Describe brevemente la situación problema o caso de estudio que desarrollarás. Justifica por qué puede resultar interesante para las empresas del sector continuar leyendo el trabajo.
-Trata de proponer una solución y pregúntate a ti mismo si la solución que enuncias podría solucionar (al menos parcialmente) el problema. En muchos artículos científicos esto se expresa como "Pregunta de Investigación" o "Hipótesis".
-
-Realizar un analisis de la velocidad de Internet movil en Bolivia, utilizando los datos proporcionados por Speedtest de Ookla.
+La red movil utiliza los recursos del espectro electromagnetico, en Bolivia los operadores utilizan este recurso con el fin de proveer servicios de telefonia y datos. Por tanto, se obtiene un dataset con pruebas de velocidad realizadas en distintos puntos de Bolivia para encontrar y definir los lugares donde se deben incrementar u optimizar la red movil con el fin de brindar un mejor servicio a la poblacion.
+La mineria de datos se realiza utilizando la herramienta de RStudio, el mismo nos presenta datos correlacionados para que podamos encontrar la velocidad media de bajada y subida en la red movil, ademas de contrastar los datos con la cantidad de dispositivos utilizados para las pruebas.
 
 ### Resumen
 
