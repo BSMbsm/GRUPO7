@@ -109,6 +109,28 @@ Se logro obtener un dataset enfocado solo con los datos correspondientes a la re
 Explica algo de la historia del o de los métodos que resulten elegidos. Comenta si los has visto en libros, casos de estudio, si te los sugirió o comentó otro profesor, etc.
 
 
+Para realizar el analisis del dataset se propone utilizar la metodologia Six Sigma y analisis estadisticos.
+
+## Six Sigma
+
+Six Sigma es un término acuñado por el ingeniero Bill Smith, de Motorola, en la década de los años ochenta. Fue así como la compañía denominó a su propuesta de reducción radical de defectos en los productos. Luego experimentó un nuevo impulso hacia fines del siglo XX, al ser aplicada por General Electric en toda su organización, tanto para la fabricación como para los servicios, logrando espectaculares resultados.
+
+En pocas palabras, Six Sigma es un método basado en datos que examina los procesos repetitivos de las empresas y tiene por objetivo llevar la calidad hasta niveles cercanos a la perfección. Es más, se propone una cifra: 3.4 errores o defectos por millón de oportunidades. Y se distingue de otros métodos en el hecho de que corrige los problemas antes que se presenten.
+
+Six Sigma constituye un modelo de gestión de calidad que también se conoce como DMAIC, siglas de las palabras en inglés: define, measure, analyze, improve y control. En español: definir, medir, analizar, mejorar y controlar. Estas son las cinco fases que se han de aplicar en cada proceso.
+
+**Definir: ** se procede a definir el proceso o los procesos, que serán objeto de evaluación por parte de la dirección de la empresa. También se define el equipo de trabajo que realizará el proyecto. Finalmente, se definen los objetivos de mejora.
+
+**Medir:** es importante entender el estado actual del problema o defecto por el que atraviesa el proceso objeto de mejora. Cada parte del proceso es clasificada y evaluada, identificándose las variables relacionadas con el mismo y se procede a medirlas.
+
+**Analizar: **se analizan e interpretan los resultados de la medición, contrastando la situación actual con el historial del proceso. Es aquí donde podemos averiguar las causas del problema.
+
+**Mejorar: **se realizan las acciones que se consideren necesarias para mejorar el proceso.
+
+
+**Control: **se aplican las medidas necesarias que garanticen la eficacia y continuidad del proceso, el mismo que será adecuado a los nuevos objetivos.
+
+
 ## Experimentación
 
 ---
