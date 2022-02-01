@@ -1,0 +1,237 @@
+---
+title: "SCM y Desarrollo de Proveedores"
+author: "GRUPO 7"
+subtitle: Una oportunidad para la Industria 4.0 
+output:
+  html_document:
+    theme: cosmo
+    highlight: monochrome
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+    fig_caption: yes
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
+---
+
+
+## Trabajo Final del Módulo
+
+<h2>Maestría en Administración de Empresas </h2>
+
+<h3>Supply Chain Management  </h3>
+<h2> Una puerta de entrada para Industria 4.0 en latinoamérica </h2>
+![UDS](image/upb.png)
+<hr>
+
+
+# Formato para la presentación del trabajo final del módulo
+
+
+## Nombre del Grupo
+
+**GRUPO 7**
+
+## Integrantes
+
+
+
+1. CAMIL BAZAN  <camibh1986@gmail.com>
+2. ANGEL VELIZ <anrovere21@gmail.com>
+3. BORIS SARZURI MAMANI <boris.sarzuri@yahoo.es>
+
+
+
+# Procedimientos:
+
+* Los alumnos se organizarán en grupos de 4 alumnos (número aproximado).
+
+* Deberán señalar en todos los documentos (pdf, html y Rmd) el nombre del grupo , apellido(s) y nombre(s) de todos los integrantes, así como los correos (ver ejemplo en la sección "Integrantes")
+
+* Un alumno de cada grupo creará una carpeta en GitHub que compartirá con sus compañeros y profesores.
+
+* Utilizarán esta plantilla para elaborar la monografía con la que serán evaluados.
+
+* La plantilla debe ser intervenida por todos los miembros del equipo en un repositorio de GitHub. Si el grupo no tiene experiencia o esta tarea lo supera deberá consultar a los profesores.
+
+* Tejer (knit) el documento Rmd y presentarlo en la consulta previa a la entrega (Fecha Límite 31 Enero)
+
+* Una vez que hayas obtenido la confirmación del profesor genera con el archivo Rmd el documento PDF que debes subir a la plataforma de moodle.
+
+* Subir un sólo archivo por grupo
+
+
+# Estructura de la monografía
+
+## Situación Problema
+
+Describe brevemente la situación problema o caso de estudio que desarrollarás. Justifica por qué puede resultar interesante para las empresas del sector continuar leyendo el trabajo.
+Trata de proponer una solución y pregúntate a ti mismo si la solución que enuncias podría solucionar (al menos parcialmente) el problema. En muchos artículos científicos esto se expresa como "Pregunta de Investigación" o "Hipótesis".
+
+
+Realizar un analisis de la velocidad de Internet movil en Bolivia, utilizando los datos proporcionados por Speedtest de Ookla.
+
+
+### Resumen
+
+Escribe esta parte del documento al finalizar el trabajo. 
+Limita esta parte a 200 palabras. 
+Revisa publicaciones científicas para inspirarte. 
+El resumen debe decir en trés o cuatro fraces:
+
+* El objetivo
+* La hipótesis o pregunta de investigación
+* Los datos y métodos que elegiste
+* Anticipa los resultados que encontrará el lector
+
+
+
+
+## Revisión bibliográfica, materiales y métodos
+
+Señala qué datasets utilizarás, di de dónde los has obtenido. 
+Señala qué métodos utilizarás para comprobar si la hipótesis o pregunta de investigación tiene respuesta afirmativa o negativa.
+Mira muy bien la forma en que escriben los artículos
+
+Para realizar el análisis se utilizara el dataset proporcionado por Okkla, este conjunto de datos proporciona métricas de rendimiento de la red móvil(celular).El dataset tiene los siguientes campos registrados en la prueba de velocidad de Ookla:
+
+
+Ítem  | Descripción
+------------- | -------------
+avg_d_kbps    | La velocidad de descarga promedio de todas las pruebas realizadas en el mosaico, representada en kilobits por segundo.
+avg_u_kbps    | La velocidad de carga promedio de todas las pruebas realizadas en el mosaico, representada en kilobits por segundo.
+avg_lat_ms    | La latencia promedio de todas las pruebas realizadas en el mosaico, representada en milisegundos
+tests         | El número de pruebas realizadas en el mosaico.  
+devices       | El número de dispositivos únicos que aportan pruebas en el mosaico. 
+quadkey       | El quadkey que representa el azulejo. 
+
+Se logro obtener un dataset enfocado solo con los datos correspondientes a la región de Bolivia, actualizado hasta el 8 de noviembre de 2021, en la pagina de ciudatos Bolivia.
+
+
+
+## Marcos teóricos o métodos aplicables
+
+Explica algo de la historia del o de los métodos que resulten elegidos. Comenta si los has visto en libros, casos de estudio, si te los sugirió o comentó otro profesor, etc.
+
+Para realizar el analisis del dataset se propone utilizar la metodologia Six Sigma y analisis estadisticos.
+
+## Six Sigma
+
+Six Sigma es un término acuñado por el ingeniero Bill Smith, de Motorola, en la década de los años ochenta. Fue así como la compañía denominó a su propuesta de reducción radical de defectos en los productos. Luego experimentó un nuevo impulso hacia fines del siglo XX, al ser aplicada por General Electric en toda su organización, tanto para la fabricación como para los servicios, logrando espectaculares resultados.
+
+En pocas palabras, Six Sigma es un método basado en datos que examina los procesos repetitivos de las empresas y tiene por objetivo llevar la calidad hasta niveles cercanos a la perfección. Es más, se propone una cifra: 3.4 errores o defectos por millón de oportunidades. Y se distingue de otros métodos en el hecho de que corrige los problemas antes que se presenten.
+
+Six Sigma constituye un modelo de gestión de calidad que también se conoce como DMAIC, siglas de las palabras en inglés: define, measure, analyze, improve y control. En español: definir, medir, analizar, mejorar y controlar. Estas son las cinco fases que se han de aplicar en cada proceso.
+
+**Definir: ** se procede a definir el proceso o los procesos, que serán objeto de evaluación por parte de la dirección de la empresa. También se define el equipo de trabajo que realizará el proyecto. Finalmente, se definen los objetivos de mejora.
+
+**Medir:** es importante entender el estado actual del problema o defecto por el que atraviesa el proceso objeto de mejora. Cada parte del proceso es clasificada y evaluada, identificándose las variables relacionadas con el mismo y se procede a medirlas.
+
+**Analizar: **se analizan e interpretan los resultados de la medición, contrastando la situación actual con el historial del proceso. Es aquí donde podemos averiguar las causas del problema.
+
+**Mejorar: **se realizan las acciones que se consideren necesarias para mejorar el proceso.
+
+
+**Control: **se aplican las medidas necesarias que garanticen la eficacia y continuidad del proceso, el mismo que será adecuado a los nuevos objetivos.
+
+## Experimentación
+
+Aplica los métodos que seleccionaste a los datos que tienes.
+Construye resultados numéricos.
+Presenta gráficos
+Si fuese necesario elabora una infografía con todo el material.
+## Inportacion del dataset desde Drive.
+
+```{r}
+library(readr)
+speedtest <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQYecO6SVuDnUgG8oerMQViFfVSkLuI-RuMK6IdNcS3lvZF9KNZGkdnhr8t_Bt7BrzeWnIVCbHU1FFZ/pub?gid=0&single=true&output=csv", 
+    locale = locale(decimal_mark = ",", grouping_mark = "."))
+tail(speedtest)
+
+```
+
+
+```{r}
+par(mfrow=c(2,1))
+plot (speedtest$devices ~ speedtest$descarga_movil, pch = 20, main="Descarga vs Equipos probados", ylab="DL Mpbs", xlab="Equipos")
+plot (speedtest$devices ~ speedtest$subida_movil, pch = 20, main="Subida vs Equipos probados", ylab="UL Mbps", xlab="Equipos")
+```
+```{r}
+par(mfrow=c(2,2))
+hist(speedtest$descarga_movil,breaks = 100, main = "Velocidad de bajada[Mbps]")
+hist(speedtest$subida_movil,breaks = 100, main = "Velocidad de subida[Mbps]")
+hist(speedtest$devices,breaks = 100, main = "Cantidad de dispositivos")
+hist(speedtest$avg_lat_ms,breaks = 100, main = "Latencia de dispositivos")
+
+```
+
+```{r}
+mean(speedtest$descarga_movil)
+mean(speedtest$subida_movil)
+mean(speedtest$devices)
+mean(speedtest$avg_lat_ms)
+sd(speedtest$descarga_movil)
+sd(speedtest$subida_movil)
+sd(speedtest$devices)
+sd(speedtest$avg_lat_ms)
+```
+```{r}
+par(mfrow=c(2,2))
+m1 <- rnorm(5426,14.38,12.87)
+hist(m1, breaks = 100,main = "Velocidad de bajada[Mbps]")
+
+m2 <- rnorm(5426,9.18,7.72)
+hist(m2, breaks = 100, main = "Velocidad de subida[Mbps]")
+
+m3 <- rnorm(5426,3.69,6.17)
+hist(m3, breaks = 100 , main = "Cantidad de dispositivos")
+
+m4 <- rnorm(5426,36.56,57.18)
+hist(m4, breaks = 100, main = "Latencia de dispositivos")
+```
+
+```{r}
+movil_rawdata <- speedtest[,c(6,8,9,10)]
+movil_rawdata
+```
+
+```{r}
+plot(movil_rawdata)
+```
+
+
+
+
+## Interpretación de resultados
+
+En esta parte señala claramente las cosas que no eran evidentes y que se han puesto de manifiesto con la experimentación.
+Trata de comentar situaciones del contexto que no fueron explicadas en la **Situación Problema** que están influyendo en los gráficos y resultados obtenidos.
+
+Responde a la pregunta de investigación y di si era verdadero o falso lo que pensabas al principio.
+
+
+## Referencias Bibliográficas
+
+Cita todas las bibliotecas de R-Cran que hayas utilizado
+Señala todos los enlaces en los que están los datos que utilizas.
+Señala los artículos que más te han aportado inspiración
+
+
+* Cano, Emilio L., Moguerza, Javier M. and Redchuk, Andres. 2012. Six Sigma with R. Statistical Engineering for Process Improvement, Use R!, vol. 36. Springer, New York. https://www.springer.com/gp/book/9781461436515.
+* https://github.com/teamookla/ookla-open-data/blob/master/tutorials/aggregate_by_county.md
+* https://ciudatos-bolivia.org/dataset/velocidad-de-internet-en-bolivia
+* https://negociosyempresa.com/metodologia-six-sigma/
+
+
+
+
+
+
+
+
+
+
+
+
+
