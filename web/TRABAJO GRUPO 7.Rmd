@@ -277,6 +277,17 @@ movil_rawdata
 ```{r}
 plot(movil_rawdata)
 ```
+
+# Correlacion para interpretar el flujo de datos y su proyeccion
+```{r}
+library(car)
+```
+
+```{r}
+scatterplotMatrix(movil_rawdata)
+```
+
+
 # Creacion de mapa de Bolivia
 ```{r}
 library(sf)
