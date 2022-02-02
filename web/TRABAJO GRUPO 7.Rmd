@@ -81,6 +81,11 @@ El resumen debe decir en trés o cuatro fraces:
 * Los datos y métodos que elegiste
 * Anticipa los resultados que encontrará el lector
 
+
+En el presente documento se realiza el análisis de la situación de las redes móviles en Bolivia, considerando ciudades principales y zonas suburbanas. Para dicho análisis se utilizará los datos obtenidos por la herramienta de speedtest de Ookla actualizados hasta noviembre de 2021 y la herramienta de Rstudio para el procesamiento de datos.
+Se realizará gráficos que ayuden a identificar los parámetros que determinen el estado actual de la velocidad de las redes móviles, además determinar parámetros estadísticos de las velocidades de descarga y subida. 
+
+
 ## Introduccion
 
 Cada año se publica un informe por We Are Social y Hootsuite que contiene un resumen global y por regiones del uso que se tiene del internet y de las redes sociales. Dicha información está basada en diversas fuentes de información como: GWI, Statista, App Annie, The ITU, GSMA Intelligence, Semrush, SimilarWeb, Locowise y Kenshoo.
