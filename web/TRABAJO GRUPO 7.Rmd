@@ -70,10 +70,15 @@ La mineria de datos se realiza utilizando la herramienta de RStudio, el mismo no
 
 ### Resumen
 
+Escribe esta parte del documento al finalizar el trabajo. 
+Limita esta parte a 200 palabras. 
+Revisa publicaciones científicas para inspirarte. 
+El resumen debe decir en trés o cuatro fraces:
 
-En el presente documento se realiza el análisis de la situación de las redes móviles en Bolivia, considerando ciudades principales y zonas suburbanas. Para dicho análisis se utilizará los datos obtenidos por la herramienta de speedtest de Ookla actualizados hasta noviembre de 2021 y la herramienta de Rstudio para el procesamiento de datos.
-Se realizará gráficos que ayuden a identificar los parámetros que determinen el estado actual de la velocidad de las redes móviles, además determinar parámetros estadísticos de las velocidades de descarga y subida. 
-
+* El objetivo
+* La hipótesis o pregunta de investigación
+* Los datos y métodos que elegiste
+* Anticipa los resultados que encontrará el lector
 
 ## Revisión bibliográfica, materiales y métodos
 
@@ -119,13 +124,6 @@ Six Sigma constituye un modelo de gestión de calidad que también se conoce com
 
 **Control: **se aplican las medidas necesarias que garanticen la eficacia y continuidad del proceso, el mismo que será adecuado a los nuevos objetivos.
 
-## Desviacion estandar
-
-La desviación estándar es la medida de dispersión más común, que indica qué tan dispersos están los datos con respecto a la media. Mientras mayor sea la desviación estándar, mayor será la dispersión de los datos.
-
-El símbolo σ (sigma) se utiliza frecuentemente para representar la desviación estándar de una población, mientras que s se utiliza para representar la desviación estándar de una muestra. La variación que es aleatoria o natural de un proceso se conoce comúnmente como ruido.
-
-La desviación estándar se puede utilizar para establecer un valor de referencia para estimar la variación general de un proceso.
 
 ## Experimentación
 
@@ -278,11 +276,15 @@ scatterplotMatrix(movil_rawdata)
 
 
 # Creacion de mapa de Bolivia
+
 ```{r}
 library(sf)
 library("ggspatial")
 library(rnaturalearth)
 library(rnaturalearthdata)
+
+world <- ne_countries(scale = "medium", returnclass = "sf")
+class(world)
 
 #mapa de Bolivia
 
@@ -290,10 +292,26 @@ mapa_bolivia <- ggplot(data = world) +
     geom_sf() +
   annotation_scale(location = "bl", width_hint = 0.5) +
     annotation_north_arrow(location = "bl", which_north = "true", 
-        pad_x = unit(3.0, "in"), pad_y = unit(3.5, "in"),
+        pad_x = unit(5.0, "in"), pad_y = unit(5.0, "in"),
         style = north_arrow_fancy_orienteering) +
     coord_sf(xlim = c(-69.98, -57.22), ylim = c(-9.54, -23.10), expand = FALSE)
 
+plot(mapa_bolivia)
+```
+
+# Guardado del mapa de Bolivia
+
+```{r}
+ggsave("mapa_bolivia.pdf")
+ggsave("map_web.png", width = 6, height = 6, dpi = "screen")
+```
+# documento SHP importado
+```{r}
+library(rgdal)
+library(sf)
+setwd("C:/Users/user1/Documents/")
+shp <- readOGR("1", "movil-T1-2021")
+plot(shp)
 plot(mapa_bolivia)
 ```
 
@@ -305,9 +323,14 @@ Luego de realizar la correlacion de datos y analizar el campo de datos, se concl
 
 ## Referencias Bibliográficas
 
+Cita todas las bibliotecas de R-Cran que hayas utilizado
+Señala todos los enlaces en los que están los datos que utilizas.
+Señala los artículos que más te han aportado inspiración
+
 * https://github.com/teamookla/ookla-open-data/blob/master/tutorials/aggregate_by_county.md
 * https://ciudatos-bolivia.org/dataset/velocidad-de-internet-en-bolivia
 * https://negociosyempresa.com/metodologia-six-sigma/
+* https://r-spatial.org/r/2018/10/25/ggplot2-sf.html  -- El mejor tutorial que encontre para crear un mapa de Bolivia
 
 
 
