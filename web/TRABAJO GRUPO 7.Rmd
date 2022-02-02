@@ -318,15 +318,6 @@ plot(mapa_bolivia)
 ggsave("mapa_bolivia.pdf")
 ggsave("map_web.png", width = 6, height = 6, dpi = "screen")
 ```
-# documento SHP importado
-```{r}
-library(rgdal)
-library(sf)
-setwd("C:/Users/user1/Documents/")
-shp <- readOGR("1", "movil-T1-2021")
-plot(shp)
-plot(mapa_bolivia)
-```
 
 ## Interpretación de resultados
 
