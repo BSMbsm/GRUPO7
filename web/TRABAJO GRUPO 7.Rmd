@@ -66,6 +66,7 @@ Los maestrantes del grupo son:
 ## Situación Problema
 
 La red movil utiliza los recursos del espectro electromagnetico, en Bolivia los operadores utilizan este recurso con el fin de proveer servicios de telefonia y datos. Por tanto, se obtiene un dataset con pruebas de velocidad realizadas en distintos puntos de Bolivia para encontrar y definir los lugares donde se deben incrementar u optimizar la red movil con el fin de brindar un mejor servicio a la poblacion.
+
 La mineria de datos se realiza utilizando la herramienta de RStudio, el mismo nos presenta datos correlacionados para que podamos encontrar la velocidad media de bajada y subida en la red movil, ademas de contrastar los datos con la cantidad de dispositivos utilizados para las pruebas.
 
 ### Resumen
@@ -79,6 +80,13 @@ El resumen debe decir en trés o cuatro fraces:
 * La hipótesis o pregunta de investigación
 * Los datos y métodos que elegiste
 * Anticipa los resultados que encontrará el lector
+
+## Introduccion
+
+Cada año se publica un informe por We Are Social y Hootsuite que contiene un resumen global y por regiones del uso que se tiene del internet y de las redes sociales. Dicha información está basada en diversas fuentes de información como: GWI, Statista, App Annie, The ITU, GSMA Intelligence, Semrush, SimilarWeb, Locowise y Kenshoo.
+
+Bolivia tiene uno de los servicios de internet más lentos de la región, según el ranking elaborado por el portal internacional cable.co.uk. Dicho portal realiza un análisis cada año y en la pasada gestión (hasta junio de 2021) analizó hasta 1.100 millones de pruebas de velocidad en 224 países distintos. Según algunas compañías en el país, el uso de datos se duplicó en la pandemia por las muchas necesidades que surgieron (clases virtuales, teletrabajo, etc.)
+
 
 ## Revisión bibliográfica, materiales y métodos
 
@@ -331,6 +339,8 @@ Señala los artículos que más te han aportado inspiración
 * https://ciudatos-bolivia.org/dataset/velocidad-de-internet-en-bolivia
 * https://negociosyempresa.com/metodologia-six-sigma/
 * https://r-spatial.org/r/2018/10/25/ggplot2-sf.html  -- El mejor tutorial que encontre para crear un mapa de Bolivia
+* https://www.colectivomarketero.com/internet-redes-sociales-en-bolivia-2021/
+*
 
 
 
