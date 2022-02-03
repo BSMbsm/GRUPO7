@@ -142,6 +142,11 @@ data.frame("Tecnologia"=c("GPRS","EDGE","UMTS","HSDPA","HSDPA+","LTE"),
 
 ### Datos estadisticos de la Autoridad de regulacion y Fiscalizacion de Telecomunicaciones y trasporte (ATT).
 
+
+La entidad de regulacion en su pagina web proporciona los datos de los moviles registrados hasta septiembre del 2021, donde se puede observar que la mayoria de los dispositivos se encuentran en las ciudades principales de Bolivia.
+
+**Lineas Moviles Registradas por Departamento**
+
 ```{r,echo = FALSE}
 library(huxtable)
 x<- c("La Paz","Santa Cruz","Cochabamba","Oruro","Tarija","Potosi","Chuquisaca","Beni","Pando")
