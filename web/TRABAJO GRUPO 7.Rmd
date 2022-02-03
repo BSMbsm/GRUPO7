@@ -399,7 +399,8 @@ Señala los artículos que más te han aportado inspiración
 * https://rpubs.com/Juve_Campos/codigoEnRMarkdown
 * https://att.gob.bo/content/estad%C3%ADstica-sectorial
 * https://www.telesemana.com/blog/2020/11/25/hay-14-918-radiobases-en-bolivia-y-el-49-por-ciento-son-4g/
-* 
+* Andrew Oleksy. 2018. Data Science with R: A Step By Step Guide With Visual Illustrations & Examples. 	
+Independently published.
 
 
 
