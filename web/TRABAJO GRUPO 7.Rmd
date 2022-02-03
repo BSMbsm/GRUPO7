@@ -140,7 +140,7 @@ data.frame("Tecnologia"=c("GPRS","EDGE","UMTS","HSDPA","HSDPA+","LTE"),
            "Estandar"=c("2.5G","2.5G","3G","3G","3G","4G"))
 ```
 
-## Datos estadisticos de la Autoridad de regulacion y Fiscalizacion de Telecomunicaciones y trasporte (ATT)
+### Datos estadisticos de la Autoridad de regulacion y Fiscalizacion de Telecomunicaciones y trasporte (ATT)
 
 ```{r,echo = FALSE}
 m <-c(3498014,3423197,2091279,721408,588621,572694,522906,335073,93016)
