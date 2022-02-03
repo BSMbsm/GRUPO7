@@ -327,8 +327,8 @@ plot(movil$devices,movil$avg_lat_ms)
 # Comando para utilizar rawdata
 
 ```{r}
-movil_rawdata <- movil[,c(9,11,12,13)]
-movil_rawdata
+movil_rawdata <- movil[,c(6,8,9,10)]
+tail(movil_rawdata)
 ```
 
 # Comando para ver la correlacion de datos
