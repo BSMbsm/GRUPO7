@@ -281,6 +281,12 @@ hist(movil$devices,breaks = 100, main = "Cantidad de dispositivos")
 hist(m3, breaks = 100)
 ```
 
+## Diagrama de Caja de las velocidades de la red movil
+
+```{r}
+boxplot(movil$descarga_movil,movil$subida_movil, horizontal = T,names = c("DL Mpbs","UL Mpbs"), main = " DL vs UL")
+```
+
 # Grafico complementario de Densidad
 
 ```{r}
