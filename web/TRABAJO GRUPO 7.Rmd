@@ -380,6 +380,8 @@ Señala los artículos que más te han aportado inspiración
 * https://r-spatial.org/r/2018/10/25/ggplot2-sf.html  -- El mejor tutorial que encontre para crear un mapa de Bolivia
 * https://www.colectivomarketero.com/internet-redes-sociales-en-bolivia-2021/
 * https://rpubs.com/Juve_Campos/codigoEnRMarkdown
+* https://att.gob.bo/content/estad%C3%ADstica-sectorial
+* 
 
 
 
