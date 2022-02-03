@@ -202,7 +202,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 library(readr)
-movil <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vS9TSXeCQaBBmUDR9xKfQPG4UYZsUhdoqil8vx_cm79hCxCNAqHvBrOTW1dRQvMf4ienzGP6L8zEb-G/pub?gid=1343453018&single=true&output=csv")
+movil <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQYecO6SVuDnUgG8oerMQViFfVSkLuI-RuMK6IdNcS3lvZF9KNZGkdnhr8t_Bt7BrzeWnIVCbHU1FFZ/pub?gid=0&single=true&output=csv", 
+    locale = locale(decimal_mark = ",", grouping_mark = "."))
 ```
 
 # Descripcion del documento importado
