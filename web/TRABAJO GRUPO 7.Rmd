@@ -26,8 +26,8 @@ output:
 <hr>
 
 
-# __MONOGRAFIA PARA LA MATERIA DE GESTION DE PROVEEDORES Y CADENA DE SUMINISTROS__
-# __ANALISIS DE LA VELOCIDAD DE INTERNET EN BOLIVIA__
+# __MONOGRAFIA PARA EL MODULO DE GESTION DE PROVEEDORES Y CADENA DE SUMINISTROS__
+# __ANALISIS DE LA VELOCIDAD DE INTERNET MOVIL EN BOLIVIA__
 
 ## __GRUPO 7__
 
@@ -117,7 +117,24 @@ Se logro obtener un dataset enfocado solo con los datos correspondientes a la re
 
 ## Marcos teóricos o métodos aplicables
 
+## Evolucion de las Redes Moviles
 
+### ¿Qué es 2G/3G/4G?
+En primer lugar, es necesario saber que los primeros dispositivos móviles solo se usaban para realizar llamadas y enviar mensajes de texto (teléfonos analógicos de primera generación), por lo que las siglas 2G/3G/4G llegaron mucho después.
+
+Cuando se realiza un cambio de generación tecnológica se modifican elementos importantes de estas tecnologías, en pro de mejorar significativamente la forma de comunicarnos.
+
+### Tecnología 2G
+En la década de los 90 los teléfonos pasaron de analógicos a digitales. La velocidad de datos pasó de 56 kbit/s hasta 114kbit/s permitiendo los famosos SMS, bajo un protocolo conocido como GSM (Global System for Mobile) y posteriormente GPRS (General Packet Radio Service), una extensión superior de GSM.
+
+### Tecnología 3G
+Es modificada la potencia de las antenas, aumentando así las conexiones al igual que es mejorada la calidad de voz y la velocidad de conexión llega hasta los 2048 kbit/s (2 megabits). Se permite la descarga de aplicaciones de audio, imágenes y vídeo en tiempo real. Posteriormente esta tecnologia evoluciona permitiendo tener una conexion de datos de hasta 21 Mbps con la tecnologia de HSPA+ y utilizando de forma mas eficiente el espectro electromagnetico.
+
+### Tecnología 4G
+Representa la cuarta generación y permite la navegación de hasta 100 megabits por segundo. Admite ver películas y partidos de futbol en tiempo real. El avance tecnológico y la variedad de dispositivos de esta generación ha aumentado significativamente el tiempo de uso de estos dispositivos.
+
+
+## Metodologia
 
 Para realizar el analisis del dataset se propone utilizar la metodologia Six Sigma y analisis estadisticos.
 
