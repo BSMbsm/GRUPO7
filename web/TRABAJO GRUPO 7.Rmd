@@ -133,6 +133,12 @@ Es modificada la potencia de las antenas, aumentando así las conexiones al igua
 ### Tecnología 4G
 Representa la cuarta generación y permite la navegación de hasta 100 megabits por segundo. Admite ver películas y partidos de futbol en tiempo real. El avance tecnológico y la variedad de dispositivos de esta generación ha aumentado significativamente el tiempo de uso de estos dispositivos.
 
+```{r}
+# Velocidades Maximas de Cada tecnologia Movil
+data.frame("Tecnologia"=c("GPRS","EDGE","UMTS","HSDPA","HSDPA+","LTE"),
+           "Velocidad Maxima"=c("54 Kbps","220 Kbps","384 Kbps", "7.2 Mbps","42 Mbps", "100 Mbps"),
+           "Estandar"=c("2.5G","2.5G","3G","3G","3G","4G"))
+```
 
 ## Metodologia
 
