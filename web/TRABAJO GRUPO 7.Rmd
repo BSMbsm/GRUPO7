@@ -403,6 +403,7 @@ Señala los artículos que más te han aportado inspiración
 Independently published.
 * https://rpubs.com/HAVB/geoinfo
 * https://mappinggis.com/2019/07/creacion-de-mapas-con-r-y-ggplot2/
+* https://geo.gob.bo/geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage;jsessionid=node016k2jjc4hsbgx1bnhspngh0yhz373.node0?0
 
 
 
