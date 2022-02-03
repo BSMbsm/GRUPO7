@@ -402,7 +402,7 @@ Señala los artículos que más te han aportado inspiración
 * Andrew Oleksy. 2018. Data Science with R: A Step By Step Guide With Visual Illustrations & Examples. 	
 Independently published.
 * https://rpubs.com/HAVB/geoinfo
-* 
+* https://mappinggis.com/2019/07/creacion-de-mapas-con-r-y-ggplot2/
 
 
 
