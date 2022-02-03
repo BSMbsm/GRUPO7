@@ -157,6 +157,10 @@ pie(m,labels=c("La Paz:30%","Santa Cruz: 29%","Cochabamba:18%","Oruro : 6%","Tar
 
 ```
 
+## Cantidad de Radiobases Instaladas en el Territorio Boliviano
+
+La Autoridad de Regulación y Fiscalización de Telecomunicaciones y Transportes (ATT) señaló que hay a junio de 2020 un total de 14.918 radiobases instaladas en Bolivia y el 49 por ciento son 4G. Son 7.313 los sitios de este tipo, 112 más que las informadas al cierre del año pasado. En tanto, hay 4.915 radiobases 2G y 2.690 son 3G.
+
 ## Metodologia
 
 Para realizar el analisis del dataset se propone utilizar la metodologia Six Sigma y analisis estadisticos.
@@ -387,6 +391,7 @@ Señala los artículos que más te han aportado inspiración
 * https://www.colectivomarketero.com/internet-redes-sociales-en-bolivia-2021/
 * https://rpubs.com/Juve_Campos/codigoEnRMarkdown
 * https://att.gob.bo/content/estad%C3%ADstica-sectorial
+* https://www.telesemana.com/blog/2020/11/25/hay-14-918-radiobases-en-bolivia-y-el-49-por-ciento-son-4g/
 * 
 
 
