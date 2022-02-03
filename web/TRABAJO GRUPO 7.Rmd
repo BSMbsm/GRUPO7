@@ -92,6 +92,9 @@ Cada año se publica un informe por We Are Social y Hootsuite que contiene un re
 
 Bolivia tiene uno de los servicios de internet más lentos de la región, según el ranking elaborado por el portal internacional cable.co.uk. Dicho portal realiza un análisis cada año y en la pasada gestión (hasta junio de 2021) analizó hasta 1.100 millones de pruebas de velocidad en 224 países distintos. Según algunas compañías en el país, el uso de datos se duplicó en la pandemia por las muchas necesidades que surgieron (clases virtuales, teletrabajo, etc.)
 
+## 1 Objetivo
+
+Observar el estado de las velocidades de internet en las redes moviles de Bolivia provistas por los operadores nacionales. Asi mismo identificar las necesidades para poder mejorar la experiencia del usuario final. 
 
 ## Revisión bibliográfica, materiales y métodos
 
