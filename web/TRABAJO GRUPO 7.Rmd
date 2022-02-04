@@ -372,6 +372,33 @@ mapa_bolivia <- ggplot(data = world) +
 plot(mapa_bolivia)
 ```
 
+## Grafico de las coordendas geograficas del puntos donde se realizo las pruebas en Bolivia.
+
+lecturas del dataset de las pruebas.
+```{r}
+radios <- st_read("https://ciudatos-bolivia.org/dataset/3605c6f5-1480-4c89-b95a-7060a87f88d5/resource/35dc597b-79b7-41f8-86cb-68249571d8f2/download/movil-t1-2021.geojson")
+tail(radios)
+ggplot() + geom_sf(data = radios, color="red")
+```
+
+Lecturas de los datos geograficos de Bolivia, desde un archivo geojson.
+
+```{r}
+Bol <- st_read("https://geo.gob.bo/geoserver/vAutonomias/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=vAutonomias:Departamentos_Bolivia_2015&maxFeatures=50&outputFormat=application%2Fjson")
+tail(Bol)
+ggplot() + geom_sf(data = Bol, color="blue")
+```
+Grafica de la ubicacion donde se realizaron las pruebas de la red movil en Bolivia.
+
+```{r}
+ggplot(data = Bol) +
+  geom_sf(color='black') +
+  xlab("Longitud") + ylab("Latitud") +
+  ggtitle("Ubicacion de las pruebas",
+          subtitle = "prueba de internet movil por Ookla") +
+  geom_sf(data=radios, color = 'red')
+```
+
 # Guardado del mapa de Bolivia
 
 ```{r}
