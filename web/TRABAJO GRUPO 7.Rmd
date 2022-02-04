@@ -372,7 +372,14 @@ mapa_bolivia <- ggplot(data = world) +
 plot(mapa_bolivia)
 ```
 
-## Grafico de las coordendas geograficas del puntos donde se realizo las pruebas en Bolivia.
+# Guardado del mapa de Bolivia
+
+```{r}
+ggsave("mapa_bolivia.pdf")
+ggsave("map_web.png", width = 6, height = 6, dpi = "screen")
+```
+
+# Grafico de las coordendas geograficas del puntos donde se realizo las pruebas en Bolivia.
 
 lecturas del dataset de las pruebas.
 ```{r}
@@ -399,12 +406,6 @@ ggplot(data = Bol) +
   geom_sf(data=radios, color = 'red')
 ```
 
-# Guardado del mapa de Bolivia
-
-```{r}
-ggsave("mapa_bolivia.pdf")
-ggsave("map_web.png", width = 6, height = 6, dpi = "screen")
-```
 
 ## Interpretación de resultados
 
