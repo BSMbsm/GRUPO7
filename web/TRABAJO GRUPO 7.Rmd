@@ -258,7 +258,7 @@ sd(movil$devices)
 
 Desviacion estandar de descarga Movil[Mbps]
 
-** 12.8745**
+**12.8745**
 
 Desviacion estandar de subida movil [Mbps]
 
