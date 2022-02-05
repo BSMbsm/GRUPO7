@@ -70,7 +70,7 @@ La red movil utiliza los recursos del espectro electromagnetico, en Bolivia los 
 
 La mineria de datos se realiza utilizando la herramienta de RStudio, el mismo nos presenta datos correlacionados para que podamos encontrar la velocidad media de bajada y subida en la red movil, ademas de contrastar los datos con la cantidad de dispositivos utilizados para las pruebas.
 
-### **2.Resumen***
+### **2.Resumen**
 
 Escribe esta parte del documento al finalizar el trabajo. 
 Limita esta parte a 200 palabras. 
