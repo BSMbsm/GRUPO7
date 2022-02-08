@@ -391,7 +391,7 @@ Grafico de las coordendas geograficas del puntos donde se realizo las pruebas en
 lecturas del dataset de las pruebas.
 
 ```{r}
-radios <- st_read("https://ciudatos-bolivia.org/dataset/3605c6f5-1480-4c89-b95a-7060a87f88d5/resource/35dc597b-79b7-41f8-86cb-68249571d8f2/download/movil-t1-2021.geojson")
+radios <- st_read("https://bsmbsm.github.io/test/")
 ggplot() + geom_sf(data = radios, color="red")
 ```
 
