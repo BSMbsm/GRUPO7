@@ -97,10 +97,10 @@ Bolivia tiene uno de los servicios de internet más lentos de la región, según
 
 Observar el estado de las velocidades de internet en las redes moviles de Bolivia provistas por los operadores nacionales. Asi mismo identificar las necesidades para poder mejorar la experiencia del usuario final. 
 
-### **5. Revisión bibliográfica, materiales y métodos**
+### **5. Datos y métodos**
 
 
-Para realizar el análisis se utilizara el dataset proporcionado por Okkla, este conjunto de datos proporciona métricas de rendimiento de la red móvil(celular).El dataset tiene los siguientes campos registrados en la prueba de velocidad de Ookla:
+Para realizar el análisis se utilizara el dataset proporcionado por Ookla, este conjunto de datos proporciona métricas de rendimiento de la red móvil(celular).El dataset tiene los siguientes campos registrados en la prueba de velocidad de Ookla:
 
 
 Ítem  | Descripción
@@ -114,13 +114,15 @@ quadkey       | El quadkey que representa el azulejo.
 
 Se logro obtener un dataset enfocado solo con los datos correspondientes a la región de Bolivia, actualizado hasta el 8 de noviembre de 2021, en la pagina de ciudatos Bolivia.
 
+Se aplicara un análisis estadístico determinando del promedio y desviación estándar de la velocidad de descarga (Downlink ) y subida (uplink ) de los dispositivos móviles, ademas de realizar histogramas y diagrama de cajas: Finalmente se realizara un gráfico de las coordenadas geográficas de los dispositivos móviles donde se realizaron las pruebas de la red móvil.
 
 
-### **6. Marcos teóricos o métodos aplicables**
+### **6. Marco teórico**
 
 #### **6.1 Evolucion de las Redes Moviles**
 
 **¿Qué es 2G/3G/4G?**
+
 En primer lugar, es necesario saber que los primeros dispositivos móviles solo se usaban para realizar llamadas y enviar mensajes de texto (teléfonos analógicos de primera generación), por lo que las siglas 2G/3G/4G llegaron mucho después.
 
 Cuando se realiza un cambio de generación tecnológica se modifican elementos importantes de estas tecnologías, en pro de mejorar significativamente la forma de comunicarnos.
