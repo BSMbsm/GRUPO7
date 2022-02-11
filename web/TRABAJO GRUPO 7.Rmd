@@ -72,11 +72,6 @@ La mineria de datos se realiza utilizando la herramienta de RStudio, el mismo no
 
 ### **2.Resumen**
 
-Escribe esta parte del documento al finalizar el trabajo. 
-Limita esta parte a 200 palabras. 
-Revisa publicaciones científicas para inspirarte. 
-El resumen debe decir en trés o cuatro fraces:
-
 Con la evolucion de la tecnologia y el incremento de dispositivos moviles el internet se ha convertido en una necesidad del dia a dia, diferentes dispositivos proveen una conexion a los usuarios de diferentes maneras y en distintas aplicaciones, para esto los operadores moviles deben estar al pendiente de la utilizacion de la red movil y los servicios de internet. 
 Bolivia es uno de los paises con un ranking muy bajo en la region de Sudamerica, con respecto a las velocidades de internet provistas a los usuarios, en 2020 Bolivia presento un proyecto de una salida soberana e internacional de conexion directa hacia los proveedores de Internet, teniendo asi mayor capacidad de la conexion internacional. Entonces por que Bolivia aun sigue entre los paises con menores valores de velocidades de Internet?.
 En este trabajo se realiza el analisis de los resultados obtenidos por Okkla mediante la aplicacion Speedtest a traves del dataset provisto con las mediciones realizadas mediante las redes moviles de internet en todo el pais.
