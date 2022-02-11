@@ -77,17 +77,17 @@ Limita esta parte a 200 palabras.
 Revisa publicaciones científicas para inspirarte. 
 El resumen debe decir en trés o cuatro fraces:
 
-* El objetivo
-* La hipótesis o pregunta de investigación
-* Los datos y métodos que elegiste
-* Anticipa los resultados que encontrará el lector
+Con la evolucion de la tecnologia y el incremento de dispositivos moviles el internet se ha convertido en una necesidad del dia a dia, diferentes dispositivos proveen una conexion a los usuarios de diferentes maneras y en distintas aplicaciones, para esto los operadores moviles deben estar al pendiente de la utilizacion de la red movil y los servicios de internet. 
+Bolivia es uno de los paises con un ranking muy bajo en la region de Sudamerica, con respecto a las velocidades de internet provistas a los usuarios, en 2020 Bolivia presento un proyecto de una salida soberana e internacional de conexion directa hacia los proveedores de Internet, teniendo asi mayor capacidad de la conexion internacional. Entonces por que Bolivia aun sigue entre los paises con menores valores de velocidades de Internet?.
+En este trabajo se realiza el analisis de los resultados obtenidos por Okkla mediante la aplicacion Speedtest a traves del dataset provisto con las mediciones realizadas mediante las redes moviles de internet en todo el pais.
 
-
-En el presente documento se realiza el análisis de la situación de las redes móviles en Bolivia, considerando ciudades principales y zonas suburbanas. Para dicho análisis se utilizará los datos obtenidos por la herramienta de speedtest de Ookla actualizados hasta noviembre de 2021 y la herramienta de Rstudio para el procesamiento de datos.
-Se realizará gráficos que ayuden a identificar los parámetros que determinen el estado actual de la velocidad de las redes móviles, además determinar parámetros estadísticos de las velocidades de descarga y subida. 
+Del analisis realizado para todas las mediciones de velocidades de internet obtenidas del dataset de Okkla, se observa que durante este año se incremento los valores de latencia y ping, asi mismo existe proveedores que tienen velocidades bajas, las cuales afectan directamente en el promedio y los datos para obtener un resultado general, dando una conclusion de que los operadores deben mejorar estos valores a traves de mejora en sus radiobases con mayor y mejor tecnologia movil, realizando ampliaciones de cobertura, capacidad y otros recurso que ayudaran a mejorar la experiencia de los usuarios. 
 
 
 ### **3.Introduccion**
+
+En el presente documento se realiza el análisis de la situación de las redes móviles en Bolivia, considerando ciudades principales y zonas suburbanas. Para dicho análisis se utilizará los datos obtenidos por la herramienta de speedtest de Ookla actualizados hasta noviembre de 2021 y la herramienta de Rstudio para el procesamiento de datos.
+Se realizará gráficos que ayuden a identificar los parámetros que determinen el estado actual de la velocidad de las redes móviles, además determinar parámetros estadísticos de las velocidades de descarga y subida. 
 
 Cada año se publica un informe por We Are Social y Hootsuite que contiene un resumen global y por regiones del uso que se tiene del internet y de las redes sociales. Dicha información está basada en diversas fuentes de información como: GWI, Statista, App Annie, The ITU, GSMA Intelligence, Semrush, SimilarWeb, Locowise y Kenshoo.
 
