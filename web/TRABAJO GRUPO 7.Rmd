@@ -205,8 +205,10 @@ Six Sigma constituye un modelo de gestión de calidad que también se conoce com
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-PRUEBA DE CONFIGURACION 
-Importar archivo csv de Google Sheets
+**Importar un archivo de la nube**
+
+Procedemos a importar del archivo csv de Google Sheets, se subió el dataset a la nube para su fácil acceso.
+
 
 ```{r}
 library(readr)
@@ -214,14 +216,19 @@ movil <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQYecO6SVuDnU
     locale = locale(decimal_mark = ",", grouping_mark = "."))
 ```
 
-Descripcion del documento importado
+**Descripción del dataset**
 
-Comando para ver las primeras lineas de la tabla importada
+Para ver las ultimas filas del dataset utilizamos el siguiente comando:
+
 
 ```{r}
 tail(movil)
 ```
-Comando para crear un histograma
+
+**Histograma de los parámetros**
+
+Se realizara el histograma de los parámetros medidos en la prueba.
+
 
 ```{r}
 hist(movil$descarga_movil,breaks = 100, main = "Velocidad de bajada[kbps]")
@@ -229,7 +236,10 @@ hist(movil$subida_movil,breaks = 100, main = "Velocidad de subida[kbps]")
 hist(movil$devices,breaks = 100, main = "Cantidad de dispositivos")
 ```
 
-Comando para encontrar el promedio de las variables: descarga, subida y devices
+**Calculo del promedio de los parámetros**
+
+Se realiza el calculo del promedio de las variables: descarga, subida y dispositivos.
+
 
 ```{r}
 mean(movil$descarga_movil)
@@ -250,7 +260,10 @@ Promedio de cantidad de dispositivos
 **3.686878**
 
 
-Comando para encontrar el desvio estandar de los valores
+**Calculo de la desviación estándar**
+
+Determinamos la desviación estándar de las variables anteriores.
+
 
 ```{r}
 sd(movil$descarga_movil)
@@ -270,7 +283,11 @@ Desviacion estandar de cantidad de dispositivos
 
 **6.16712**
 
-Creacion de variable para encontra la normal y densidad
+
+**Grafico de los valores calculados**
+
+Con los valores calculados del promedio y desviación estandar, generamos la normal de cada variable.
+
 
 ```{r}
 m1 <- rnorm(5425,14.38,12.87)
@@ -283,7 +300,9 @@ m3 <- rnorm(5425,3.69,6.17)
 hist(m3, breaks = 100)
 ```
 
-Comando para unir diagramas (parseo)
+**Comparación de las variables y la normal generada**
+
+Para generar el diagrama de comparación utilizamos los siguientes comandos:
 
 ```{r}
 par(mfrow=c(1,2))
@@ -299,13 +318,19 @@ hist(movil$devices,breaks = 100, main = "Cantidad de dispositivos")
 hist(m3, breaks = 100)
 ```
 
-Diagrama de Caja de las velocidades de la red movil
+**Diagrama de cajas**
+
+Realizamos el diagrama de Caja de las velocidades de la red móvil.
+
 
 ```{r}
 boxplot(movil$descarga_movil,movil$subida_movil, horizontal = T,names = c("DL Mpbs","UL Mpbs"), main = " DL vs UL")
 ```
 
-Grafico complementario de Densidad
+**Grafico de densidades**
+
+Para tener una mejor percepción de las variables, se generará el diagrama de densidades de los valores calculados anteriormente y se compara con los parámetros de la prueba.
+
 
 ```{r}
 par(mfrow=c(1,2))
@@ -321,7 +346,11 @@ plot(density(movil$devices))
 plot(density(m3))
 ```
 
-Commando para ploteo y correlacion
+
+**Grafico de puntos de las variables**
+
+Se realiza el ploteo de las variables dispositivos con las variables velocidad de descarga, velocidad de subida y latencia.
+
 
 ```{r}
 plot(movil$descarga_movil,movil$devices, main = "Cantidad de dispositivos por velocidad de descarga")
@@ -332,21 +361,28 @@ plot(movil$devices,movil$avg_lat_ms, main = "Cantidad de dispositivos por latenc
 ```
 
 
-Comando para utilizar rawdata
+**Grafico de correlación de las variables**
+
+Utilizamos el comando rawdata para seleccionar las variables para el análisis de correlación.
+
 
 ```{r}
 movil_rawdata <- movil[,c(6,8,9,10)]
 tail(movil_rawdata, main = "Tabla de datasets")
 ```
 
+
 Comando para ver la correlacion de datos
+
 
 ```{r}
 plot(movil_rawdata, main = "Correlacion de datos") 
 
 ```
 
-Correlacion para interpretar el flujo de datos y su proyeccion
+
+Graficamos la correlación para interpretar el flujo de datos y su proyección.
+
 
 ```{r}
 library(car)
@@ -357,7 +393,10 @@ scatterplotMatrix(movil_rawdata)
 ```
 
 
-Creacion de mapa de Bolivia
+**Graficar el mapa de Bolivia**
+
+Se utilizara las siguientes librerías para generar el grafico.
+
 
 ```{r}
 library(sf)
@@ -383,16 +422,22 @@ plot(mapa_bolivia) +
   ggtitle("Mapa de Bolivia")
 ```
 
-Guardado del mapa de Bolivia
+
+Procedemos a guardar el mapa en un archivo pdf.
+
 
 ```{r}
 ggsave("mapa_bolivia.pdf")
 ggsave("map_web.png", width = 6, height = 6, dpi = "screen")
 ```
 
-Grafico de las coordendas geograficas del puntos donde se realizo las pruebas en Bolivia.
 
-lecturas del dataset de las pruebas.
+**Grafico de las coordenadas geograficas de las pruebas**
+
+Se realizara el grafico de las coordenadas geograficas del puntos donde se realizo las pruebas en Bolivia.
+
+Para esto es necesario leer las coordenadas del dataset y guardarlos en una variable nueva.
+
 
 ```{r}
 radios <- st_read("https://bsmbsm.github.io/test/")
@@ -400,14 +445,19 @@ ggplot() + geom_sf(data = radios, color="red") +
   ggtitle("Puntos Georeferenciales de las pruebas")
 ```
 
-Lecturas de los datos geograficos de Bolivia, desde un archivo geojson.
+
+procedemos a leer los datos geográficos de Bolivia, desde un archivo geojson, almacenado en Github.
+
 
 ```{r}
 Bol <- st_read("https://geo.gob.bo/geoserver/vAutonomias/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=vAutonomias:Departamentos_Bolivia_2015&maxFeatures=50&outputFormat=application%2Fjson")
 ggplot() + geom_sf(data = Bol, color="blue") +
   ggtitle("Mapa Georeferencial de Bolivia")
 ```
-Grafica de la ubicacion donde se realizaron las pruebas de la red movil en Bolivia.
+
+
+Finalmente ubicamos los puntos en el mapa de Bolivia.
+
 
 ```{r}
 ggplot(data = Bol) +
