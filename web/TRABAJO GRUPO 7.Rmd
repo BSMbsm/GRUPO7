@@ -324,11 +324,11 @@ plot(density(m3))
 Commando para ploteo y correlacion
 
 ```{r}
-plot(movil$descarga_movil,movil$devices)
+plot(movil$descarga_movil,movil$devices, main = "Cantidad de dispositivos por velocidad de descarga")
 
-plot(movil$subida_movil,movil$devices)
+plot(movil$subida_movil,movil$devices, main = "Cantidad de dispositivos por velocidad de subida")
 
-plot(movil$devices,movil$avg_lat_ms)
+plot(movil$devices,movil$avg_lat_ms, main = "Cantidad de dispositivos por latencia")
 ```
 
 
@@ -336,13 +336,14 @@ Comando para utilizar rawdata
 
 ```{r}
 movil_rawdata <- movil[,c(6,8,9,10)]
-tail(movil_rawdata)
+tail(movil_rawdata, main = "Tabla de datasets")
 ```
 
 Comando para ver la correlacion de datos
 
 ```{r}
-plot(movil_rawdata)
+plot(movil_rawdata, main = "Correlacion de datos") 
+
 ```
 
 Correlacion para interpretar el flujo de datos y su proyeccion
@@ -378,7 +379,8 @@ mapa_bolivia <- ggplot(data = world) +
         style = north_arrow_fancy_orienteering) +
     coord_sf(xlim = c(-69.98, -57.22), ylim = c(-9.54, -23.10), expand = FALSE)
 
-plot(mapa_bolivia)
+plot(mapa_bolivia) + 
+  ggtitle("Mapa de Bolivia")
 ```
 
 Guardado del mapa de Bolivia
@@ -394,14 +396,16 @@ lecturas del dataset de las pruebas.
 
 ```{r}
 radios <- st_read("https://bsmbsm.github.io/test/")
-ggplot() + geom_sf(data = radios, color="red")
+ggplot() + geom_sf(data = radios, color="red") +
+  ggtitle("Puntos Georeferenciales de las pruebas")
 ```
 
 Lecturas de los datos geograficos de Bolivia, desde un archivo geojson.
 
 ```{r}
 Bol <- st_read("https://geo.gob.bo/geoserver/vAutonomias/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=vAutonomias:Departamentos_Bolivia_2015&maxFeatures=50&outputFormat=application%2Fjson")
-ggplot() + geom_sf(data = Bol, color="blue")
+ggplot() + geom_sf(data = Bol, color="blue") +
+  ggtitle("Mapa Georeferencial de Bolivia")
 ```
 Grafica de la ubicacion donde se realizaron las pruebas de la red movil en Bolivia.
 
@@ -409,8 +413,8 @@ Grafica de la ubicacion donde se realizaron las pruebas de la red movil en Boliv
 ggplot(data = Bol) +
   geom_sf(color='black') +
   xlab("Longitud") + ylab("Latitud") +
-  ggtitle("Ubicacion de las pruebas",
-          subtitle = "prueba de internet movil por Ookla") +
+  ggtitle("Ubicación Georeferencial de las pruebas",
+          subtitle = "Prueba de internet movil por Ookla") +
   geom_sf(data=radios, color = 'red')
 ```
 
@@ -439,6 +443,14 @@ Independently published.
 * https://rpubs.com/HAVB/geoinfo
 * https://mappinggis.com/2019/07/creacion-de-mapas-con-r-y-ggplot2/
 * https://geo.gob.bo/geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage;jsessionid=node016k2jjc4hsbgx1bnhspngh0yhz373.node0?0
+
+
+
+
+
+
+
+
 
 
 
