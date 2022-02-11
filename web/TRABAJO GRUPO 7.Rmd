@@ -416,10 +416,10 @@ mapa_bolivia <- ggplot(data = world) +
     annotation_north_arrow(location = "bl", which_north = "true", 
         pad_x = unit(5.0, "in"), pad_y = unit(5.0, "in"),
         style = north_arrow_fancy_orienteering) +
+  ggtitle("Mapa de Bolivia") +
     coord_sf(xlim = c(-69.98, -57.22), ylim = c(-9.54, -23.10), expand = FALSE)
 
-plot(mapa_bolivia) + 
-  ggtitle("Mapa de Bolivia")
+plot(mapa_bolivia)
 ```
 
 
