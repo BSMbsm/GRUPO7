@@ -318,13 +318,13 @@ par(mfrow=c(1,2))
 hist(movil$subida_movil,breaks = 100, main = "Histograma de la Velocidad de subida",  xlab = "Velocidad de subida [Mbps]",
      ylab = "Frecuencia", col = "#C1FFC1", border = "black",xlim = c(0, 50), ylim = c(0, 350))
 hist(m2, breaks = 100, main = "Normal de la Velocidad de subida",  xlab = "Velocidad de subida [Mbps]",
-     ylab = "Frecuencia", col = "#458B74", border = "black", ylim = c(0, 300))
+     ylab = "Frecuencia", col = "#458B74", border = "black", ylim = c(0, 180))
 
 par(mfrow=c(1,2))
 hist(movil$devices,breaks = 100, main = "Cantidad de dispositivos" ,  xlab = "Dispositivos de prueba",
      ylab = "Frecuencia", col = "#E0EEEE", border = "black",xlim = c(0, 100), ylim = c(0, 4000))
 hist(m3, breaks = 100, main = "Normal de dispositivos" ,  xlab = "Dispositivos de prueba",
-     ylab = "Frecuencia", col = "#53868B", border = "black", ylim = c(0, 250))
+     ylab = "Frecuencia", col = "#53868B", border = "black", ylim = c(0, 200))
 ```
 
 **Diagrama de cajas**
@@ -485,7 +485,7 @@ Luego de realizar la correlación de datos y analizar el campo de datos, se conc
 
 * La latencia se incremento mucho en pruebas donde la velocidad de descarga y subida no llegaban a mas de 10 Mbps, por tanto, se estima que la red móvil de los operadores de Bolivia proveen un servicio deficiente, las graficas de 'avg_lat_ms' versus 'subida_móvil' y 'avg_lat_ms' versus 'descarga_móvil' demuestran nuestra hipótesis.
 
-*En los gráficos de densidad se observa una dispersión mayor en la velocidad de bajada, esto puede ser debido que en las pruebas se realizo considerando todas las tecnologías existentes en Bolivia (2G,3G y 4G). Por tanto existe un gran numero de dispositivos que estaban conectados al servicio de 2G y 3G.
+* En los gráficos de densidad se observa una dispersión mayor en la velocidad de bajada, esto puede ser debido que en las pruebas se realizo considerando todas las tecnologías existentes en Bolivia (2G,3G y 4G). Por tanto existe un gran numero de dispositivos que estaban conectados al servicio de 2G y 3G.
 
 * la subida y descarga de datos promedio a nivel nacional es de 9.18 Mbps y 14.38 Mbps respectivamente, es decir, la relación de descarga a subida casi llega a 2/1, tambien deducimos que, la tecnología LTE esta siendo aprovechada por los usuarios finales. Por tanto, la inversión de los operadores debe ser dirigida a la ampliación de la red LTE porque la demanda de los usuarios así lo demuestra.  
 
