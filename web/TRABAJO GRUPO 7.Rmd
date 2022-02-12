@@ -226,13 +226,16 @@ Se realizara el histograma de los parámetros medidos en la prueba.
 
 
 ```{r}
-hist(movil$descarga_movil,breaks = 100, main = "Histograma de la Velocidad de bajada",  xlab = "Velocidad de bajada [Mbps]",
+hist(movil$descarga_movil,breaks = 100, main = "Histograma de la Velocidad de bajada",  
+     xlab = "Velocidad de bajada [Mbps]",
      ylab = "Frecuencia", col = "#00BFFF", border = "black",xlim = c(0, 200), ylim = c(0, 800))
 
-hist(movil$subida_movil,breaks = 100, main = "Histograma de la Velocidad de subida",  xlab = "Velocidad de subida [Mbps]",
+hist(movil$subida_movil,breaks = 100, main = "Histograma de la Velocidad de subida",  
+     xlab = "Velocidad de subida [Mbps]",
      ylab = "Frecuencia", col = "#C1FFC1", border = "black",xlim = c(0, 50), ylim = c(0, 350))
 
-hist(movil$devices,breaks = 100, main = "Cantidad de dispositivos" ,  xlab = "Dispositivos de prueba",
+hist(movil$devices,breaks = 100, main = "Cantidad de dispositivos" ,  
+     xlab = "Dispositivos de prueba",
      ylab = "Frecuencia", col = "#E0EEEE", border = "black",xlim = c(0, 100), ylim = c(0, 4000))
 ```
 
@@ -291,11 +294,13 @@ Con los valores calculados del promedio y desviación estándar, generamos la no
 
 ```{r}
 m1 <- rnorm(5426,14.38,12.87)
-hist(m1, breaks = 100, main = "Normal de la Velocidad de bajada",  xlab = "Velocidad de bajada [Mbps]",
+hist(m1, breaks = 100, main = "Normal de la Velocidad de bajada",  
+     xlab = "Velocidad de bajada [Mbps]",
      ylab = "Frecuencia", col = "#7AC5CD", border = "black", ylim = c(0, 200))
 
 m2 <- rnorm(5426,14.9,18.73)
-hist(m2, breaks = 100, main = "Normal de la Velocidad de subida",  xlab = "Velocidad de subida [Mbps]",
+hist(m2, breaks = 100, main = "Normal de la Velocidad de subida",  
+     xlab = "Velocidad de subida [Mbps]",
      ylab = "Frecuencia", col = "#458B74", border = "black", ylim = c(0, 180))
 
 m3 <- rnorm(5426,3.69,6.17)
@@ -309,21 +314,27 @@ Para generar el diagrama de comparación utilizamos los siguientes comandos:
 
 ```{r}
 par(mfrow=c(1,2))
-hist(movil$descarga_movil,breaks = 100, main = "Histograma de la Velocidad de bajada",  xlab = "Velocidad de bajada [Mbps]",
+hist(movil$descarga_movil,breaks = 100, main = "Histograma de la Velocidad de bajada", 
+     xlab = "Velocidad de bajada [Mbps]",
      ylab = "Frecuencia", col = "#00BFFF", border = "black",xlim = c(0, 200), ylim = c(0, 800))
-hist(m1, breaks = 100, main = "Normal de la Velocidad de bajada",  xlab = "Velocidad de bajada [Mbps]",
+hist(m1, breaks = 100, main = "Normal de la Velocidad de bajada",  
+     xlab = "Velocidad de bajada [Mbps]",
      ylab = "Frecuencia", col = "#7AC5CD", border = "black", ylim = c(0, 200))
 
 par(mfrow=c(1,2))
-hist(movil$subida_movil,breaks = 100, main = "Histograma de la Velocidad de subida",  xlab = "Velocidad de subida [Mbps]",
+hist(movil$subida_movil,breaks = 100, main = "Histograma de la Velocidad de subida",  
+     xlab = "Velocidad de subida [Mbps]",
      ylab = "Frecuencia", col = "#C1FFC1", border = "black",xlim = c(0, 50), ylim = c(0, 350))
-hist(m2, breaks = 100, main = "Normal de la Velocidad de subida",  xlab = "Velocidad de subida [Mbps]",
+hist(m2, breaks = 100, main = "Normal de la Velocidad de subida",  
+     xlab = "Velocidad de subida [Mbps]",
      ylab = "Frecuencia", col = "#458B74", border = "black", ylim = c(0, 180))
 
 par(mfrow=c(1,2))
-hist(movil$devices,breaks = 100, main = "Cantidad de dispositivos" ,  xlab = "Dispositivos de prueba",
+hist(movil$devices,breaks = 100, main = "Cantidad de dispositivos" ,  
+     xlab = "Dispositivos de prueba",
      ylab = "Frecuencia", col = "#E0EEEE", border = "black",xlim = c(0, 100), ylim = c(0, 4000))
-hist(m3, breaks = 100, main = "Normal de dispositivos" ,  xlab = "Dispositivos de prueba",
+hist(m3, breaks = 100, main = "Normal de dispositivos" ,  
+     xlab = "Dispositivos de prueba",
      ylab = "Frecuencia", col = "#53868B", border = "black", ylim = c(0, 200))
 ```
 
@@ -343,16 +354,21 @@ Para tener una mejor percepción de las variables, se generará el diagrama de d
 
 ```{r}
 par(mfrow=c(1,2))
-plot(density(movil$descarga_movil),main = "Histograma de densidad de DL", xlab = "Velocidad de bajada [Mbps]", ylab = "Densidad")
+plot(density(movil$descarga_movil),main = "Histograma de densidad de DL",
+xlab = "Velocidad de bajada [Mbps]", ylab = "Densidad")
 plot(density(m1), main = "Normal de densidad de DL", xlab = "Velocidad de bajada [Mbps]", ylab = "Densidad")
 
 par(mfrow=c(1,2))
-plot(density(movil$subida_movil),main = "Histograma de densidad de UL", xlab = "Velocidad de Subida [Mbps]", ylab = "Densidad")
-plot(density(m2),  main = "Normal de densidad de DL", xlab = "Velocidad de subida [Mbps]", ylab = "Densidad")
+plot(density(movil$subida_movil),main = "Histograma de densidad de UL", 
+xlab = "Velocidad de Subida [Mbps]", ylab = "Densidad")
+plot(density(m2),  main = "Normal de densidad de DL", 
+xlab = "Velocidad de subida [Mbps]", ylab = "Densidad")
 
 par(mfrow=c(1,2))
-plot(density(movil$devices) ,main = "Histograma de densidad de dispositivos", xlab = "Dispositivos de prueba", ylab = "Densidad", xlim = c(0, 100))
-plot(density(m3),  main = "Normal de densidad de Dispositivos", xlab = "Dispositivos de prueba", ylab = "Densidad")
+plot(density(movil$devices) ,main = "Histograma de densidad de dispositivos", 
+xlab = "Dispositivos de prueba", ylab = "Densidad", xlim = c(0, 100))
+plot(density(m3),  main = "Normal de densidad de Dispositivos", 
+xlab = "Dispositivos de prueba", ylab = "Densidad")
 ```
 
 
@@ -362,11 +378,14 @@ Se realiza el ploteo de las variables dispositivos con las variables velocidad d
 
 
 ```{r}
-plot(movil$descarga_movil,movil$devices, main = "Cantidad de dispositivos por velocidad de descarga",xlab = "Velocidad de bajada [Mbps]", ylab = "Dispositivos")
+plot(movil$descarga_movil,movil$devices, main = "Cantidad de dispositivos por velocidad de descarga",
+xlab = "Velocidad de bajada [Mbps]", ylab = "Dispositivos")
 
-plot(movil$subida_movil,movil$devices, main = "Cantidad de dispositivos por velocidad de subida", xlab = "Velocidad de subida [Mbps]", ylab = "Dispositivos")
+plot(movil$subida_movil,movil$devices, main = "Cantidad de dispositivos por velocidad de subida", 
+xlab = "Velocidad de subida [Mbps]", ylab = "Dispositivos")
 
-plot(movil$devices,movil$avg_lat_ms, main = "Cantidad de dispositivos por latencia", xlab = "Dispositivos", ylab = "Latencia [ms]")
+plot(movil$devices,movil$avg_lat_ms, main = "Cantidad de dispositivos por latencia", 
+xlab = "Dispositivos", ylab = "Latencia [ms]")
 ```
 
 
