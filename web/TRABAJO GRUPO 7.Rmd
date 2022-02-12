@@ -22,7 +22,7 @@ output:
 
 <h3>Supply Chain Management  </h3>
 <h2> MONOGRAFIA PARA EL MODULO DE GESTION DE PROVEEDORES Y CADENA DE SUMINISTROS </h2>
-![UDS](image/logo.png)
+![UDS](image/upb.png)
 <hr>
 
 
@@ -66,17 +66,17 @@ Los maestrantes del grupo son:
 
 ### **1.Situación Problema**
 
-La red movil utiliza los recursos del espectro electromagnetico, en Bolivia los operadores utilizan este recurso con el fin de proveer servicios de telefonia y datos. Por tanto, se obtiene un dataset con pruebas de velocidad realizadas en distintos puntos de Bolivia para encontrar y definir los lugares donde se deben incrementar u optimizar la red movil con el fin de brindar un mejor servicio a la poblacion.
+La red móvil utiliza los recursos del espectro electromagnético, en Bolivia los operadores utilizan este recurso con el fin de proveer servicios de telefonía y datos. Por tanto, se obtiene un dataset con pruebas de velocidad realizadas en distintos puntos de Bolivia para encontrar y definir los lugares donde se deben incrementar u optimizar la red móvil con el fin de brindar un mejor servicio a la población.
 
-La mineria de datos se realiza utilizando la herramienta de RStudio, el mismo nos presenta datos correlacionados para que podamos encontrar la velocidad media de bajada y subida en la red movil, ademas de contrastar los datos con la cantidad de dispositivos utilizados para las pruebas.
+La minería de datos se realiza utilizando la herramienta de RStudio, el mismo nos presenta datos correlacionados para que podamos encontrar la velocidad media de bajada y subida en la red móvil, ademas de contrastar los datos con la cantidad de dispositivos utilizados para las pruebas.
 
 ### **2.Resumen**
 
-Con la evolucion de la tecnologia y el incremento de dispositivos moviles el internet se ha convertido en una necesidad del dia a dia, diferentes dispositivos proveen una conexion a los usuarios de diferentes maneras y en distintas aplicaciones, para esto los operadores moviles deben estar al pendiente de la utilizacion de la red movil y los servicios de internet. 
-Bolivia es uno de los paises con un ranking muy bajo en la region de Sudamerica, con respecto a las velocidades de internet provistas a los usuarios, en 2020 Bolivia presento un proyecto de una salida soberana e internacional de conexion directa hacia los proveedores de Internet, teniendo asi mayor capacidad de la conexion internacional. Entonces por que Bolivia aun sigue entre los paises con menores valores de velocidades de Internet?.
-En este trabajo se realiza el analisis de los resultados obtenidos por Okkla mediante la aplicacion Speedtest a traves del dataset provisto con las mediciones realizadas mediante las redes moviles de internet en todo el pais.
+Con la evolución de la tecnologia y el incremento de dispositivos móviles el internet se ha convertido en una necesidad del día a dia, diferentes dispositivos proveen una conexión a los usuarios de diferentes maneras y en distintas aplicaciones, para esto los operadores móviles deben estar al pendiente de la utilización de la red móvil y los servicios de Internet. 
+Bolivia es uno de los paises con un ranking muy bajo en la región de Sudamérica, con respecto a las velocidades de Internet provistas a los usuarios, en 2020 Bolivia presento un proyecto de una salida soberana e internacional de conexión directa hacia los proveedores de Internet, teniendo asi mayor capacidad de la conexión internacional. Entonces por que Bolivia aun sigue entre los países con menores valores de velocidades de Internet?.
+En este trabajo se realiza el análisis de los resultados obtenidos por Ookla mediante la aplicación Speedtest a través del dataset provisto con las mediciones realizadas mediante las redes móviles de internet en todo el país.
 
-Del analisis realizado para todas las mediciones de velocidades de internet obtenidas del dataset de Okkla, se observa que durante este año se incremento los valores de latencia y ping, asi mismo existe proveedores que tienen velocidades bajas, las cuales afectan directamente en el promedio y los datos para obtener un resultado general, dando una conclusion de que los operadores deben mejorar estos valores a traves de mejora en sus radiobases con mayor y mejor tecnologia movil, realizando ampliaciones de cobertura, capacidad y otros recurso que ayudaran a mejorar la experiencia de los usuarios. 
+Del análisis realizado para todas las mediciones de velocidades de Internet obtenidas del dataset de Ookla, se observa que durante este año se incremento los valores de latencia y ping, así mismo existe proveedores que tienen velocidades bajas, las cuales afectan directamente en el promedio y los datos para obtener un resultado general, dando una conclusión de que los operadores deben mejorar estos valores a través de mejora en sus radio bases con mayor y mejor tecnología móvil, realizando ampliaciones de cobertura, capacidad y otros recurso que ayudaran a mejorar la experiencia de los usuarios. 
 
 
 ### **3.Introduccion**
@@ -84,13 +84,13 @@ Del analisis realizado para todas las mediciones de velocidades de internet obte
 En el presente documento se realiza el análisis de la situación de las redes móviles en Bolivia, considerando ciudades principales y zonas suburbanas. Para dicho análisis se utilizará los datos obtenidos por la herramienta de speedtest de Ookla actualizados hasta noviembre de 2021 y la herramienta de Rstudio para el procesamiento de datos.
 Se realizará gráficos que ayuden a identificar los parámetros que determinen el estado actual de la velocidad de las redes móviles, además determinar parámetros estadísticos de las velocidades de descarga y subida. 
 
-Cada año se publica un informe por We Are Social y Hootsuite que contiene un resumen global y por regiones del uso que se tiene del internet y de las redes sociales. Dicha información está basada en diversas fuentes de información como: GWI, Statista, App Annie, The ITU, GSMA Intelligence, Semrush, SimilarWeb, Locowise y Kenshoo.
+Cada año se publica un informe por We Are Social y Hootsuite que contiene un resumen global y por regiones del uso que se tiene del Internet y de las redes sociales. Dicha información está basada en diversas fuentes de información como: GWI, Statista, App Annie, The ITU, GSMA Intelligence, Semrush, SimilarWeb, Locowise y Kenshoo.
 
 Bolivia tiene uno de los servicios de internet más lentos de la región, según el ranking elaborado por el portal internacional cable.co.uk. Dicho portal realiza un análisis cada año y en la pasada gestión (hasta junio de 2021) analizó hasta 1.100 millones de pruebas de velocidad en 224 países distintos. Según algunas compañías en el país, el uso de datos se duplicó en la pandemia por las muchas necesidades que surgieron (clases virtuales, teletrabajo, etc.)
 
 ### **4. Objetivo**
 
-Observar el estado de las velocidades de internet en las redes moviles de Bolivia provistas por los operadores nacionales. Asi mismo identificar las necesidades para poder mejorar la experiencia del usuario final. 
+Observar el estado de las velocidades de Internet en las redes móviles de Bolivia provistas por los operadores nacionales. Así mismo identificar las necesidades para poder mejorar la experiencia del usuario final. 
 
 ### **5. Datos y métodos**
 
@@ -102,7 +102,7 @@ Para realizar el análisis se utilizara el dataset proporcionado por Ookla, este
 ------------- | -------------
 avg_d_kbps    | La velocidad de descarga promedio de todas las pruebas realizadas en el mosaico, representada en kilobits por segundo.
 avg_u_kbps    | La velocidad de carga promedio de todas las pruebas realizadas en el mosaico, representada en kilobits por segundo.
-avg_lat_ms    | La latencia promedio de todas las pruebas realizadas en el mosaico, representada en milisegundos
+avg_lat_ms    | La latencia promedio de todas las pruebas realizadas en el mosaico, representada en mili segundos
 tests         | El número de pruebas realizadas en el mosaico.  
 devices       | El número de dispositivos únicos que aportan pruebas en el mosaico. 
 quadkey       | El quadkey que representa el azulejo. 
@@ -114,7 +114,7 @@ Se aplicara un análisis estadístico determinando del promedio y desviación es
 
 ### **6. Marco teórico**
 
-#### **6.1 Evolucion de las Redes Moviles**
+#### **6.1 Evolución de las Redes Móviles**
 
 **¿Qué es 2G/3G/4G?**
 
@@ -128,11 +128,11 @@ En la década de los 90 los teléfonos pasaron de analógicos a digitales. La ve
 
 #### **6.3. Tecnología 3G**
 
-Es modificada la potencia de las antenas, aumentando así las conexiones al igual que es mejorada la calidad de voz y la velocidad de conexión llega hasta los 2048 kbit/s (2 megabits). Se permite la descarga de aplicaciones de audio, imágenes y vídeo en tiempo real. Posteriormente esta tecnologia evoluciona permitiendo tener una conexion de datos de hasta 21 Mbps con la tecnologia de HSPA+ y utilizando de forma mas eficiente el espectro electromagnetico.
+Es modificada la potencia de las antenas, aumentando así las conexiones al igual que es mejorada la calidad de voz y la velocidad de conexión llega hasta los 2048 kbit/s (2 megabits). Se permite la descarga de aplicaciones de audio, imágenes y vídeo en tiempo real. Posteriormente esta tecnología evoluciona permitiendo tener una conexion de datos de hasta 21 Mbps con la tecnologia de HSPA+ y utilizando de forma mas eficiente el espectro electromagnético.
 
 #### **6.4 Tecnología 4G**
 
-Representa la cuarta generación y permite la navegación de hasta 100 megabits por segundo. Admite ver películas y partidos de futbol en tiempo real. El avance tecnológico y la variedad de dispositivos de esta generación ha aumentado significativamente el tiempo de uso de estos dispositivos.
+Representa la cuarta generación y permite la navegación de hasta 100 megabits por segundo. Admite ver películas y partidos de fútbol en tiempo real. El avance tecnológico y la variedad de dispositivos de esta generación ha aumentado significativamente el tiempo de uso de estos dispositivos.
 
 ```{r,echo = FALSE}
 library(huxtable)
@@ -142,12 +142,12 @@ data.frame("Tecnologia"=c("GPRS","EDGE","UMTS","HSDPA","HSDPA+","LTE"),
            "Estandar"=c("2.5G","2.5G","3G","3G","3G","4G"))
 ```
 
-#### **6.5 Datos estadisticos de la Autoridad de regulacion y Fiscalizacion de Telecomunicaciones y trasporte (ATT)**
+#### **6.5 Datos estadísticos de la Autoridad de regulación y Fiscalizacion de Telecomunicaciones y trasporte (ATT)**
 
 
-La entidad de regulacion en su pagina web proporciona los datos de los moviles registrados hasta septiembre del 2021, donde se puede observar que la mayoria de los dispositivos se encuentran en las ciudades principales de Bolivia.
+La entidad de regulación en su pagina web proporciona los datos de los móviles registrados hasta septiembre del 2021, donde se puede observar que la mayoría de los dispositivos se encuentran en las ciudades principales de Bolivia.
 
-**Lineas Moviles Registradas por Departamento**
+**Lineas Móviles Registradas por Departamento**
 
 ```{r,echo = FALSE}
 library(huxtable)
@@ -157,7 +157,7 @@ data.frame(Departamento=x,Lineas_Moviles=y)
 
 ```
 
-**Grafico de lineas Moviles Registradas por Departamento - Bolivia**
+**Grafico de lineas Móviles Registradas por Departamento - Bolivia**
 
 ```{r,echo = FALSE}
 m <-c(3498014,3423197,2091279,721408,588621,572694,522906,335073,93016)
@@ -165,13 +165,13 @@ pie(m,labels=c("La Paz:30%","Santa Cruz: 29%","Cochabamba:18%","Oruro : 6%","Tar
 
 ```
 
-#### **6.6 Cantidad de Radiobases Instaladas en el Territorio Boliviano**
+#### **6.6 Cantidad de Radio bases Instaladas en el Territorio Boliviano**
 
-La Autoridad de Regulación y Fiscalización de Telecomunicaciones y Transportes (ATT) señaló que hay a junio de 2020 un total de 14.918 radiobases instaladas en Bolivia y el 49 por ciento son 4G. Son 7.313 los sitios de este tipo, 112 más que las informadas al cierre del año pasado. En tanto, hay 4.915 radiobases 2G y 2.690 son 3G.
+La Autoridad de Regulación y Fiscalización de Telecomunicaciones y Transportes (ATT) señaló que hay a junio de 2020 un total de 14.918 radio bases instaladas en Bolivia y el 49 por ciento son 4G. Son 7.313 los sitios de este tipo, 112 más que las informadas al cierre del año pasado. En tanto, hay 4.915 radio bases 2G y 2.690 son 3G.
 
-### **7. Metodologia**
+### **7. Metodología**
 
-Para realizar el analisis del dataset se propone utilizar la metodologia Six Sigma y analisis estadisticos.
+Para realizar el análisis del dataset se propone utilizar la metodología Six Sigma y análisis estadisticos.
 
 #### **7.1 Six Sigma**
 
@@ -202,7 +202,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **Importar un archivo de la nube**
 
-Procedemos a importar del archivo csv de Google Sheets, se subió el dataset a la nube para su fácil acceso.
+Procedemos a importar el archivo csv de Google Sheets, se subió el dataset a la nube para su fácil acceso.
 
 
 ```{r}
@@ -226,9 +226,14 @@ Se realizara el histograma de los parámetros medidos en la prueba.
 
 
 ```{r}
-hist(movil$descarga_movil,breaks = 100, main = "Velocidad de bajada[kbps]")
-hist(movil$subida_movil,breaks = 100, main = "Velocidad de subida[kbps]")
-hist(movil$devices,breaks = 100, main = "Cantidad de dispositivos")
+hist(movil$descarga_movil,breaks = 100, main = "Histograma de la Velocidad de bajada",  xlab = "Velocidad de bajada [Mbps]",
+     ylab = "Frecuencia", col = "#00BFFF", border = "black",xlim = c(0, 200), ylim = c(0, 800))
+
+hist(movil$subida_movil,breaks = 100, main = "Histograma de la Velocidad de subida",  xlab = "Velocidad de subida [Mbps]",
+     ylab = "Frecuencia", col = "#C1FFC1", border = "black",xlim = c(0, 50), ylim = c(0, 350))
+
+hist(movil$devices,breaks = 100, main = "Cantidad de dispositivos" ,  xlab = "Dispositivos de prueba",
+     ylab = "Frecuencia", col = "#E0EEEE", border = "black",xlim = c(0, 100), ylim = c(0, 4000))
 ```
 
 **Calculo del promedio de los parámetros**
@@ -242,7 +247,7 @@ mean(movil$subida_movil)
 mean(movil$devices)
 ```
 
-Promedio de descarga Movil
+Promedio de descarga Móvil
 
 **14.37818**
 
@@ -281,18 +286,21 @@ Desviacion estandar de cantidad de dispositivos
 
 **Grafico de los valores calculados**
 
-Con los valores calculados del promedio y desviación estandar, generamos la normal de cada variable.
+Con los valores calculados del promedio y desviación estándar, generamos la normal de cada variable.
 
 
 ```{r}
-m1 <- rnorm(5425,14.38,12.87)
-hist(m1, breaks = 10)
+m1 <- rnorm(5426,14.38,12.87)
+hist(m1, breaks = 100, main = "Normal de la Velocidad de bajada",  xlab = "Velocidad de bajada [Mbps]",
+     ylab = "Frecuencia", col = "#7AC5CD", border = "black", ylim = c(0, 200))
 
-m2 <- rnorm(5425,14.9,18.73)
-hist(m2, breaks = 100)
+m2 <- rnorm(5426,14.9,18.73)
+hist(m2, breaks = 100, main = "Normal de la Velocidad de subida",  xlab = "Velocidad de subida [Mbps]",
+     ylab = "Frecuencia", col = "#458B74", border = "black", ylim = c(0, 180))
 
-m3 <- rnorm(5425,3.69,6.17)
-hist(m3, breaks = 100)
+m3 <- rnorm(5426,3.69,6.17)
+hist(m3, breaks = 100, main = "Normal de dispositivos" ,  xlab = "Dispositivos de prueba",
+     ylab = "Frecuencia", col = "#53868B", border = "black", ylim = c(0, 200))
 ```
 
 **Comparación de las variables y la normal generada**
@@ -301,16 +309,22 @@ Para generar el diagrama de comparación utilizamos los siguientes comandos:
 
 ```{r}
 par(mfrow=c(1,2))
-hist(movil$descarga_movil,breaks = 100, main = "Velocidad de bajada[kbps]")
-hist(m1, breaks = 100)
+hist(movil$descarga_movil,breaks = 100, main = "Histograma de la Velocidad de bajada",  xlab = "Velocidad de bajada [Mbps]",
+     ylab = "Frecuencia", col = "#00BFFF", border = "black",xlim = c(0, 200), ylim = c(0, 800))
+hist(m1, breaks = 100, main = "Normal de la Velocidad de bajada",  xlab = "Velocidad de bajada [Mbps]",
+     ylab = "Frecuencia", col = "#7AC5CD", border = "black", ylim = c(0, 200))
 
 par(mfrow=c(1,2))
-hist(movil$subida_movil,breaks = 100, main = "Velocidad de subida[kbps]")
-hist(m2, breaks = 100)
+hist(movil$subida_movil,breaks = 100, main = "Histograma de la Velocidad de subida",  xlab = "Velocidad de subida [Mbps]",
+     ylab = "Frecuencia", col = "#C1FFC1", border = "black",xlim = c(0, 50), ylim = c(0, 350))
+hist(m2, breaks = 100, main = "Normal de la Velocidad de subida",  xlab = "Velocidad de subida [Mbps]",
+     ylab = "Frecuencia", col = "#458B74", border = "black", ylim = c(0, 300))
 
 par(mfrow=c(1,2))
-hist(movil$devices,breaks = 100, main = "Cantidad de dispositivos")
-hist(m3, breaks = 100)
+hist(movil$devices,breaks = 100, main = "Cantidad de dispositivos" ,  xlab = "Dispositivos de prueba",
+     ylab = "Frecuencia", col = "#E0EEEE", border = "black",xlim = c(0, 100), ylim = c(0, 4000))
+hist(m3, breaks = 100, main = "Normal de dispositivos" ,  xlab = "Dispositivos de prueba",
+     ylab = "Frecuencia", col = "#53868B", border = "black", ylim = c(0, 250))
 ```
 
 **Diagrama de cajas**
@@ -329,16 +343,16 @@ Para tener una mejor percepción de las variables, se generará el diagrama de d
 
 ```{r}
 par(mfrow=c(1,2))
-plot(density(movil$descarga_movil))
-plot(density(m1))
+plot(density(movil$descarga_movil),main = "Histograma de densidad de DL", xlab = "Velocidad de bajada [Mbps]", ylab = "Densidad")
+plot(density(m1), main = "Normal de densidad de DL", xlab = "Velocidad de bajada [Mbps]", ylab = "Densidad")
 
 par(mfrow=c(1,2))
-plot(density(movil$subida_movil))
-plot(density(m2))
+plot(density(movil$subida_movil),main = "Histograma de densidad de UL", xlab = "Velocidad de Subida [Mbps]", ylab = "Densidad")
+plot(density(m2),  main = "Normal de densidad de DL", xlab = "Velocidad de subida [Mbps]", ylab = "Densidad")
 
 par(mfrow=c(1,2))
-plot(density(movil$devices))
-plot(density(m3))
+plot(density(movil$devices) ,main = "Histograma de densidad de dispositivos", xlab = "Dispositivos de prueba", ylab = "Densidad", xlim = c(0, 100))
+plot(density(m3),  main = "Normal de densidad de Dispositivos", xlab = "Dispositivos de prueba", ylab = "Densidad")
 ```
 
 
@@ -348,11 +362,11 @@ Se realiza el ploteo de las variables dispositivos con las variables velocidad d
 
 
 ```{r}
-plot(movil$descarga_movil,movil$devices, main = "Cantidad de dispositivos por velocidad de descarga")
+plot(movil$descarga_movil,movil$devices, main = "Cantidad de dispositivos por velocidad de descarga",xlab = "Velocidad de bajada [Mbps]", ylab = "Dispositivos")
 
-plot(movil$subida_movil,movil$devices, main = "Cantidad de dispositivos por velocidad de subida")
+plot(movil$subida_movil,movil$devices, main = "Cantidad de dispositivos por velocidad de subida", xlab = "Velocidad de subida [Mbps]", ylab = "Dispositivos")
 
-plot(movil$devices,movil$avg_lat_ms, main = "Cantidad de dispositivos por latencia")
+plot(movil$devices,movil$avg_lat_ms, main = "Cantidad de dispositivos por latencia", xlab = "Dispositivos", ylab = "Latencia [ms]")
 ```
 
 
@@ -427,9 +441,9 @@ ggsave("map_web.png", width = 6, height = 6, dpi = "screen")
 ```
 
 
-**Grafico de las coordenadas geograficas de las pruebas**
+**Grafico de las coordenadas geográficas de las pruebas**
 
-Se realizara el grafico de las coordenadas geograficas del puntos donde se realizo las pruebas en Bolivia.
+Se realizara el grafico de las coordenadas geográficas del puntos donde se realizo las pruebas en Bolivia.
 
 Para esto es necesario leer las coordenadas del dataset y guardarlos en una variable nueva.
 
@@ -466,11 +480,17 @@ ggplot(data = Bol) +
 
 ### **9. Interpretación de resultados**
 
-Luego de realizar la correlacion de datos y analizar el campo de datos, se concluye que:
+Luego de realizar la correlación de datos y analizar el campo de datos, se concluye que:
 
-* La latencia se incremento mucho en pruebas donde la velocidad de descarga y subida no llegaban a mas de 10 Mbps, por tanto, se estima que la red movil de los operadores de Bolivia proveen un servicio deficiente, las graficas de 'avg_lat_ms' versus 'subida_movil' y 'avg_lat_ms' versus 'descarga_movil' demuestran nuestra hipotesis.
 
-* la subida y descarga de datos promedio a nivel nacional es de 9.18 Mbps y 14.38 Mbps respectivamente, es decir, la relacion de descarga a subida casi llega a 2/1, tambien deducimos que, la tecnologia LTE esta siendo aprovechada por los usuarios finales. Por tanto, la inversion de los operadores debe ser dirigida a la ampliacion de la red LTE porque la demanda de los usuarios asi lo demuestra.  
+* La latencia se incremento mucho en pruebas donde la velocidad de descarga y subida no llegaban a mas de 10 Mbps, por tanto, se estima que la red móvil de los operadores de Bolivia proveen un servicio deficiente, las graficas de 'avg_lat_ms' versus 'subida_móvil' y 'avg_lat_ms' versus 'descarga_móvil' demuestran nuestra hipótesis.
+
+*En los gráficos de densidad se observa una dispersión mayor en la velocidad de bajada, esto puede ser debido que en las pruebas se realizo considerando todas las tecnologías existentes en Bolivia (2G,3G y 4G). Por tanto existe un gran numero de dispositivos que estaban conectados al servicio de 2G y 3G.
+
+* la subida y descarga de datos promedio a nivel nacional es de 9.18 Mbps y 14.38 Mbps respectivamente, es decir, la relación de descarga a subida casi llega a 2/1, tambien deducimos que, la tecnología LTE esta siendo aprovechada por los usuarios finales. Por tanto, la inversión de los operadores debe ser dirigida a la ampliación de la red LTE porque la demanda de los usuarios así lo demuestra.  
+
+* De acuerdo a los datos presentados en el gráfico de los dispositivos de prueba, se puede concluir que, la zona norte de Bolivia no tiene mucha población conectada a Internet o que los operadores no proveen servicios a esta área, por tanto, el estado debe crear campañas para incentivar el uso de Internet a los usuarios con el fin de disminuir la brecha digital en la población.
+
 
 ### **10. Referencias Bibliográficas**
 
@@ -488,14 +508,6 @@ Independently published.
 * https://rpubs.com/HAVB/geoinfo
 * https://mappinggis.com/2019/07/creacion-de-mapas-con-r-y-ggplot2/
 * https://geo.gob.bo/geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage;jsessionid=node016k2jjc4hsbgx1bnhspngh0yhz373.node0?0
-
-
-
-
-
-
-
-
 
 
 
